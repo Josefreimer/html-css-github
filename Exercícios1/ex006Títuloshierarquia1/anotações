@@ -1,0 +1,25 @@
+<h1> é o título de nível 1 para o site
+
+
+
+<h2> é o título de nivel 2
+normalmente utilizado para criar subtítulos
+
+
+
+<h3> " " nível 3, normalmente utilizado para criar um típo de resposta para o subtítulos
+
+<h4>Muito utilizado para criar um tipo de resposta para o subtítulo do subtítulo.
+
+Importante!!!
+O limite dos títulos e subtítulos começa do h1 e vai até h6. Caso tiver mais de 6 níveis em seu texto, tente mudar para no máximo 6 pois fica muito complexo e difícil de ler.
+
+
+Lembrando que não precisa obrigatoriamente seguir esse padrão de subtítulo de um título, pode criar como achar melhor.
+Não se esqueça de sempre fechar cada título. <!--<h1> </h1>-->
+
+Importante!!!
+o código lorem dentro do parágrafo: <p>lorem</p>
+cria um texto aleatório.
+
+Muito utilizado para exemplos

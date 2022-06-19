@@ -1,0 +1,82 @@
+Você pode acessar a parte 1 dos pesos e tamanhos clicando aqui--><a href="anotaçõespesoestilo.html"></a>
+
+<strong>Aviso Importante no final
+</strong>
+<strong> É extremamente importante que você leia tudo e faça todos os processos corretamente
+</strong>
+
+Aqui Você irá ver como fazer para locar fontes externas
+
+Para colocar estilos de fonte externnos dentro do seu site você pasará por
+<ol>
+    <li>Entre no site da google</li>
+<li>
+copiar o @import<!-- Explicado nesse artigo -->
+</li>
+<li>
+Colar o @import dentro de style fora de qualquer tag
+</li>
+<li>
+Adicionar o font-family: e colar o css copiado logo em baixo do import
+</li>
+</ol>
+processos
+
+
+não é recomendável utilizar mais de 4 fontes ou famílias de fontes dentro do seu site,
+
+Primeiro Você deverá entrar no site do google fonts: <a href="https://fonts.google.com/" target="_blank" rel="external"></a>
+
+Após entrar no site da google fonts, Irá aparecer várias famílias de fontes onde em cada família existe vários estilos.
+Ou se você já tem algo em mente, Você pode clicar em "categorias" e ir desmarcando as categorias que você não quer que apareçam. Caso queira saber cada fonte, só ir la no final, ou leia tudo... <a href="anotaçõesfontes.html"></a>
+
+Ao selencionar uma fonte, selencione um estilo dentro da família da fonte que você selencionou.
+Ao selencionar um estilo, você pode, ou baixar<!-- Pouco recomendável --> ou você pode clicar em "select this style". Caso não aparece uma janela, logo após clicar, você pode clicar no quadrado com um sinal de + em uma das partes do quadrado
+Caso você queira por em html, você copia o "link" Caso queira em css, copia o @import, excluindo o <style></style>
+<strong>
+Importante lembrar que caso você esteja com o tradutor do google ligado, ele poderá mudar as vírgulas de lugar, o que irá estragar todo o código
+</strong>
+Após copiar o @import, vá dentro de head e dentro de style e apenas cole, não coloque dentro de outra coisa além desses dois por exemplo: 
+se colocar dentro do h1{} estará errado 
+ou colocar dentro de body{} também estará errado.
+O certo é 
+<!-- Pode copiar tudo sem medo, apenas nao copie a tag style -->
+&lt;head&gt;
+&lt;style&gt;
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap');
+&lt;/style&gt;
+&lt;/head&gt;
+<!-- Lembrando que para usar a segunda opção, o site tem que estar sempre conectado a internet, mas como ele estará ligado ao servidor, ele já vai estar então não se preocupe-->
+
+Caso Você queira utilizar mais de um estilo dentro de uma família da fonte, você pode, Basta selencionar a família que você quer, e ir selencionando cada estilo dentro da família que você quer adicionar. Após isso, basta fazer o mesmo processo anterior
+
+Porém, ainda mesmo depois de tudo isso, você não estará utilizando a fonte. Para utilizar a família da fonte com os estilos externos já aplicados do jeito que foi dito anteriormente, você deve entrar no mesmo lugar onde você copiou o @import, e rolar para baixo, até aparecer:
+"CSS rules to specify families" 
+Ou seja:
+Regras de CSS para famílias específicas.
+E copie tudo, desde o 
+font-family até o ; 
+
+
+Você pode adicionar mais estilos dentro da regra do estilo css copiado, por exemplo
+Copiado:
+font-family: 'Noto Sans TC', sans-serif;
+
+Adicionado:
+font-family: 'Noto Sans TC', arial, sans-serif;
+<a href="anotaçõesfontes.html"></a>
+    
+O que você não pode mudar é o final onde vai estar, sans-serif, pois é um estilo compativel com tudo, então sempre deixe ele.
+
+
+<strong>
+Importante:  <strong>
+Para cada fonte que você querer colocar, por exemplo: uma fonte para título, outra para subtítulo, outra para parágrafo, outra para listas...
+Para cada categoria que você quiser utilizar uma fonte diferente, você deveá sempre criar mais uma @import e fazer o mesmo processo anterior dentro de cada categoria, cuidado para não confundir
+<strong>
+&uparrow;
+</strong>
+
+<strong>
+Sempre que você for colocar um @ dentro de css, deve sempre colocar dentro de style  dentro de head e no ínicio de style e tem que estar fora de um seletor(uma tag)
+<strong>

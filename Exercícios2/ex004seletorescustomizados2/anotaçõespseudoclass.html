@@ -1,0 +1,64 @@
+<!-- 
+div == caixa vazia
+
+. == class
+
+# == Id
+
+: == pseudoclass
+
+:: == pseudoelement
+
+> == children por exemplo(div > p{}) (tudo que tiver no p dentro da div será customizado)
+
+hover == passar mouse por cima(pseudoclass)
+
+after == depois de tudo (pseudoelement)
+
+before == antes de tudo (pseudoelement)
+content:'' conteúdo
+
+a:active == quando o link estiver sendo ativo  
+pseudoclass
+
+a:visited == quando o link já foi visitado
+
+text-decoration:underline == deixa sublinhado
+
+text-decoration:none == retira todo tipo de 
+decoração 
+-->
+A pseudoclasse tem que estar relacionadas ao estado de um elemento ou classe ou seja
+
+<a href="comadonovoextra.html"></a>
+
+<style>
+    div:hover{
+
+    }
+</style>
+
+
+
+Para criar links, basta utilizar o comando <a href="url">texto</a>
+Para customizar links, basta utilizar style a{} /style
+Para customizar links que você já acessou, basta utilizar style a:visited{}
+Quando um link está com um subilhado em baixo do texto e você não quer, basta utilizar o comando:
+<br>
+<br>
+<style>
+    a,a:visited{text-decoration: none;}
+</style>
+Se quiser por em negrito basta por o bold<!-- já ensinado -->
+Se quiser que fique sublinhado quando a pessoa passar o mouse em cima basta utilizar o comando:
+<style>
+    a,a:visited:hover{text-decoration:underline}/* underline, significa linha abaixo */
+</style>
+
+Quando um você clica em um link, antes de você acessar uma página, o texto do link muda de cor, normalmente com uma cor mais escura, e ssa cor por ser alterada com o comando:
+<style>
+    a:active{
+        color:cor específica
+    }
+</style>
+

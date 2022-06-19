@@ -1,0 +1,45 @@
+Utilize o comando <code> </code> para deixar a leitura das frases mais fáceis de ler. Muito utilizada em códigos, ela deixa todas as letras equivalentes.
+
+Utilize o comando: num= int(input(frase que quer))
+por exemplo:
+int(input(digite um número))
+logo em seguida, utilize o if nome conta;
+por exemplo:
+if num %2==0;
+utilize o print(mensagem que quer enviar) por exemplo:
+print(f'O número {num} é PAR')
+utilize o else
+logo em seguida o print(mensagem)
+por exemplo:
+else
+print(f'O número {num} é Impar)
+print(fim do programa)
+pode se utilizar esse código, dentro do código citado anteriormente, <code></code>
+porém, irá perceber que por causa do comando code ele irá ficar um do lado do outro. Para isso, utilize o comando <pre></pre> fora do codigo num.
+Ele irá perceber cada código diferente e pular uma linha para cada resposta, porém, percebe-se que ele irá selencionar os espaços no início de cada frase, para isso, selencione todo a parte de dentro do código,(menos o nome do código por exemplo<code></code>) e segure shift e aperte tab para apagar aqueles espaços sobrando, caso queira acrescentar eles, faça o mesmo processo porém não segure shift e aperte tab
+
+Utilize o comando <q></q> para por aspas em uma parte da frase, ela é usada para por sentido na frase, para citações simples.
+
+Utilize o comando <blockquote></blockquote>
+Para criar uma citação de algo que ja foi citado, por exemplo: tal autor disse: <blockquote>frase do autor</blockquote>
+Utilize também o comando <blockquote cite="link da página que voce pegou a mensagem">
+</blockquote>
+esse comando vai fazer com que o google entenda de onde voce tirou aquela frase. (não é obrigatório, mas ajuda)
+
+Utilize o comando <abbr title="título descritivo de algo">palavra que foi descrita</abbr>
+utilize esse comando para poder explicar o significado de tal abreviação por exemplo
+<abbr title="HyperText Markup Language">HTML</abbr>
+Percebe-se que primeiro voce explica e depois utiliza a abreviação
+
+(pouco utilizado)
+Utilize o comando <bdo dir="ltr"></bdo> para criar uma frase contrária da esquerda para direita
+e <bdo dir="rtl"></bdo> para direita para esquerda
+
+Códigos utilizados:
+</code>
+<pre>
+shift+tab
+<q>
+<blockquote>
+<blockquote cite=" "
+abbr tit

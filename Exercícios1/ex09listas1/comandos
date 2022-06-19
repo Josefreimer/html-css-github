@@ -1,0 +1,15 @@
+<h1><!--título-->
+<h2><!--subtítulo-->
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"><!--favicon-->
+<ol><!--lista organizada-->
+<ol type="i,I,1,a,A"><!--tipos de lista-->
+<ul><!--Lista desorganizada-->
+<ul type="square">
+<strong><!--Negrito-->
+<mark><!--Marca texto-->
+<ol type="a"><!--Lista organizada tipo letra minuscula-->
+<li><!--Itens da lista-->
+<ol start="2"><!--Lista organizada começando pela letra "b" -->
+<dl><!--Lista de definições-->
+<dt><!--Termo para a definição-->
+<dd><!--Descrição para a definição-->

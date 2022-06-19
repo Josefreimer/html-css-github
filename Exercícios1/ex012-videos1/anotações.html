@@ -1,0 +1,38 @@
+Para conseguir vídeos para teste que não tenha direitos autoriais, acesse o site https://www.pexels.com/pt-br e clique na oção "vídeos"
+Não precisa baixar a qualidade/resolução máxima
+
+Compatibilidades:
+mp4v
+webm
+ogg
+
+tente colocar todos os tipos de compatibilidades, pois, cada compatibilidade tem seu navegador, então tente colocar todos os tipos
+
+Evite colocar vídeos acima de 1080p dentro do seu site
+Para colocar vídeos em seu site, utilize o comando <video src="pasta"></video>.
+Para adicionar os tipos de vídeo coloque <video>
+<source src="" type="video/mp4v">
+<source src="" type="video/webm">
+<source src="" type="video/ogg">
+</video>
+para arquivos m4v utiliza-se o tipo video/mp4v igual ao próprio mp4
+
+para ajustar o tamanho do vídeo coloque a tag width(largura) dentro do <video>
+por exemplo
+<video width="500">
+<source src="pasta" type="mp4v;webm;ogg">
+</video>
+
+Para adicionar a opção de começar o video coloque o comando "controls" dentro da tag video
+por exemplo
+
+<video controls>
+<source src="pasta" type="mp4v;ogg;web">
+</video>
+Você pode por uma  capa de vídeo com o comando poster dentro do da tag video. Por exemplo
+<video poster="pasta da imagem">
+<source src="pasta" type="m4pv;ogg;webm">
+</video>
+
+Para deixar o vídeo mais leve para o seu site, você pode adicionar direto do youtube.
+Para adicionar vídeos do youtube, basta ir no próprio youtube, pesquisar o vídeo que você quer colocar, clicar na parte de comparilhamento, clicar em incorporar e dps clique apenas em copiar e colar. Não precisa colocar a tag <video>, basta apenas colar sem nada mesmo

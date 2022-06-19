@@ -1,0 +1,16 @@
+Para criar uma modificação no estilo de html, vá em cima do título e crie um <style> </style>. Dentro desse <style> </style>coloque uma tag junto com a chaves por exemplo, o corpo, vai ficar
+<style>
+    body{função}
+    </style>
+    Existe várias funções para o corpo, não se esqueça de praticar sempre
+
+    Graças aos comandos dentro do body, agora todo o corpo irá obedecer esses comandos ao menos que voce específique uma mudança direto no html
+    Para parágrafos utilize o comando:
+    <style>
+        p{função}
+    </style>
+    Para títulos, utilize o comando:
+    <style>
+
+        h1{função}
+    </style>

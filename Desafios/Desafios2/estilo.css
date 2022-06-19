@@ -1,0 +1,123 @@
+@charset "UTF-8";
+@font-face {
+    font-family:fontidroid;
+    src:url(fontes/idroid.otf);
+}
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{font-family:sans-serif}
+.imagembugdroid{
+width:40px;
+margin:auto;
+margin-left:7em;
+width: 191px;
+height: 140px;
+}
+.fonteidroid{
+    font-family:fontidroid;
+    font-size:1.5em;
+}
+body
+{background-color:rgb(164, 207, 164);
+}
+header{
+    font-family: 'Bebas Neue', cursive;
+    width:100%;
+    text-align:center;
+    color:white;
+  background-image:linear-gradient(to bottom,rgb(70, 197, 142), rgb(76, 163, 115), rgb(30, 92, 69));
+    box-shadow:0px 2px 6px black;
+}
+header>h1{color:#ddd8d8}
+header>h3{color:rgb(192, 174, 174);
+}
+nav.linkheader{
+    width:665px;
+    margin-left:0px;
+    margin-top:-18px;
+    border-radius:10px;
+    border-top-left-radius:0px;
+    border-top-right-radius:0px;
+    background-color:rgb(30, 92, 69)
+    
+}
+nav.linkheader>a{
+ background-color: black;
+border-left: 0px;
+    margin-left:3px;
+    color:rgb(255, 255, 255);
+    font-weight:bold;
+    font-family:sans-serif;
+}
+nav.linkheader>a:hover{
+    padding:5px;
+    background-color: rgba(0, 0, 0, 0.127);}
+main{
+background-color:white;
+width:67%;
+margin-top: 0px;
+margin-left: 120px;
+padding:10px;
+
+}
+main>img{
+    width:100%
+}
+
+
+main>h1{
+    color:green;
+}
+main>p{
+    text-align:justify;
+}
+main>h1.fonteidroid{
+background-color:rgba(0, 128, 0, 0.301)
+}
+nav.videoyt{
+    padding:0px;
+    width:70.3%;
+}
+
+
+nav{background-color:green;
+    width:67%;
+    margin-top: -13px;
+    margin-left: 120px;
+    padding:10px;}
+
+    section{
+        background-color:white;
+        width:67%;
+        margin-top: -13px;
+        margin-left: 120px;
+        padding:10px;
+        border-radius:10px
+    }
+    section>footer{
+        background-color:rgb(167, 196, 167);
+        width:80%;
+        height:80%;
+        margin:auto;
+        padding:10px;
+        border-radius:10px
+    }
+    .sectionum{
+      display:inline-block;
+margin:auto;
+width:100%;
+padding:5px;
+        background-color:rgb(97, 156, 142);
+    }
+a{color:green;
+    text-decoration: none;
+    }
+
+    section.sectiondois{
+        background-color:green;
+        text-align:justify;
+    }
+   section.sectiondois>p>a{
+    color:white;
+   
+   }

@@ -1,0 +1,49 @@
+Para utilizar o peso da fonte, você deve primeiramente, colocar entre aspas simples:
+font-family:'work Sans', complemento,complemento;
+
+porém a 'work Sans' não existe em nenhum computador ou aparelho, para que ela funcione, você deve utilizar o seguinte comando dentro do style dentro de head:
+@inport url();
+<!-- É graças a esse código que poderemos utilizar vários estilos dentro de famílias de fontes que não eram compatíveis com esse família -->
+Após tudo isso, para definir qual será o estilo da fonte, você deverá utilizar o comando dentro de body:
+font-weight:<!--lighter, normal, bold, bolder--> Do menor ao maior
+<!-- Ou também pode ser classificado em classes numéricas, começa no 100 e termina em 900 *Pule sempre de 100 em 100, ou aperte ctrl space *Lembrando que nem todas as fontes são compatíveis com todos os pesos*-->
+<!-- ligheter = mais leve
+     Normal = normal
+     bold = Escura *negrito*
+     bolder =  mais escura que bold *negrito*-->
+
+<!-- Nem todas as fontes são compatíveis com todos os pesos -->
+
+<!-- Não confunda com o font-size, um é tamanho o outro é peso -->
+
+<!-- weight = Peso.
+     width = largura
+     height = Altura 
+-->
+
+
+Você pode Mudar o estilo junto com o peso da fonte, basta utilizar dentro de body o seguinte comando:
+font-style: italic;
+ou
+font-style:ctrl-space;
+<!-- Nem todas as fontes tem essa opção de misturar entre peso e estilo -->
+
+E Você também poderá deixar o Texto sublinhado, basta utilizar dentro de body o seguinte comando:
+text-decoration: underline;
+<!-- Lembrando que a família da fonte tem que ser compativel com essas funções todas:font-weight:, font-style:, text-decoration: underline -->
+
+Tudo isso, pode funcionar dentro de títulos, <!-- Inclusive é muito recomendavel que utilize --> por exemplo:<!-- vídeo -->
+h1{
+    font-family: work Sans, Sans-serif;
+    font-weight:bolder;
+    font-size:2em ou 32px;
+    font-style:italic;
+}
+porém tudo isso pode ser simplificado e é chamado de "Shorthand font"
+mas para que fique simplificado, você precisa de uma ordem para as coisas, que segue a seguinte ordem:
+font-style, font-weight,font-size,font-family
+Por exemplo:
+h1{font:italic bold 1.5em 'work Sans', Sans serif};
+<!-- Percebe-se que a ordem da shorthand é diferente da ordem colocada no exemplo de cima, então não confunda, a ordem de baixo é a "correta" -->
+<!-- Não coloque vírgula entre cada categoria -->
+<!--Você também pode apenas pular uma categoria caso nao queira ela, por exemplo, Caso não queira a fonte italica, apenas pule direto para o weight -->

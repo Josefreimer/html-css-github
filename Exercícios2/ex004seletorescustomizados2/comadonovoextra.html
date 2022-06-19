@@ -1,0 +1,125 @@
+<!-- 
+div == caixa vazia
+
+. == class
+
+# == Id
+
+: == pseudoclass
+
+:: == pseudoelement
+
+> == children por exemplo(div > p{}) (tudo que tiver no p dentro da div será customizado)
+
+hover == passar mouse por cima(pseudoclass)
+
+after == depois de tudo (pseudoelement)
+
+before == antes de tudo (pseudoelement)
+content:'' conteúdo
+
+a:active == quando o link estiver sendo ativo  
+pseudoclass
+
+a:visited == quando o link já foi visitado
+
+text-decoration:underline == deixa sublinhado
+
+text-decoration:none == retira todo tipo de 
+decoração 
+-->
+
+<span></span> utilizado para informar um trecho específico de um texto por exemplo:
+<p>Lorem, <span>ipsum dolor sit amet</span> consectetur adipisicing elit. Neque voluptas doloribus quidem id similique, et animi accusantium? Iste molestiae, sequi esse nulla voluptatum quam cupiditate! Quae sed accusamus sint vitae.</p>
+
+Ele não irá afetar em nada, porém, você pode customizar o span com o Id ou class, ou seja:
+<p> Lorem <span id="1">ipsum dolor sit</span> amet consectetur adipisicing elit. <span class="2">Distinctio pariatur velit</span> delectus consequatur excepturi facilis officiis quidem. Quidem perspiciatis accusantium sed, eos quo deserunt, excepturi architecto <span class="2">itaque</span> fugit suscipit enim.</p>
+
+<style>
+    #id{
+        color:green;
+    }
+    .class{
+        color:red;
+    }
+</style>
+
+<div></div>
+div é apenas um espaço qualquer para você customizar, onde ela vai ocupar uma linha inteira
+
+Dentro do estilo da div você por colocar o display{inline-block};
+que irá colocar tudo que tiver dentro da div em uma única linha 
+
+Para customizar uma div, Você pode utilizar o id ou class
+
+<a href="anotaçõespseudoclass.html"></a>
+div:hover{
+
+}
+hover serve para que, quando você passar o mouse em cima daquela div, ele irá executar as ações determinadas pelo css dentro dela.
+ou seja
+<style>
+    div:hover{background-color:blue;}
+</style>
+Ao passar o mouse por cima dessa div, ela ficará azul
+<strong>Percebe-se que o comando pseudoclass hover não está especifícado a nenhuma class ou id, ou seja, irá servir para todas as divs</strong>
+
+div{display:inline-block;}
+irá colocar tudo que tiver dentro da div, em uma mesma linha
+
+<style>
+    div > p{
+
+    }
+</style>
+Esse comando irá alterar tudo que estiver no parágrafo dentro da div
+<div>
+    <p></p>
+</div>
+Apenas o parágrafo será alterado
+Caso queira que o parágrafo desapareça dentro da div, basta colocar o comando:
+<style>
+
+div > p{
+        display:none;
+    }
+</style>
+<div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam itaque 
+    </p>
+</div>
+Isso fará com que todo o parágrafo dentro da div não apareça
+
+Caso queira que o parágrafo apareça apenas quando o mouse estiver em cima da div, basta utilizar o comando:
+<style>
+    
+    div{
+        display:none;
+        color:red;
+    }
+    div > p{
+        display:none;
+        color:green;
+    }
+    /* irá desaparecer com o parágrafo */
+    div:hover{
+        background-color:rgba(69, 69, 209, 0.414)
+    }  
+    /* Quando você arrastar o mouse em cima da div, ela ficará com a cor acima */
+    div:hover > p{
+        display:block
+    }
+    /* Quando você arrastar o mouse em cima da div, o parágrafo irá novamente aparecer com a cor verde, graças ao div > p*/
+    </style>
+    <!-- conteúdo html início -->
+    <div>
+    exemplo1
+        <p>exemplo2</p>
+    </div>
+     <!-- conteúdo html Fim! -->
+    O comando "div:hover > p{display:block}" fará com que, quando você arrastar o mouse em cima da div, o parágrafo escondido, novamente irá aparecer
+
+    Para utilizar o pseudoclass em uma div específica, basta colocar primeiro o id ou class e depois o pseudoclass, ou seja:
+    div#teste:hover{}
+    ou
+    div#teste:hover > p{}

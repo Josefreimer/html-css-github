@@ -1,0 +1,86 @@
+Para conseguir audios sem restrição, pode acessar o youtube stuido. Acesse o yt e clique na imagem do seu canal, e clique em youtube studio, Vá até biblioteca de audio e ative a opção "Atribuição não é necessária" dentro de três risquinhos logo no início
+
+
+Para adicionar audio utilize o código 
+<audio>
+<source src="pasta" type="tipos">
+</audio>
+esse é o codigo mais simples que tem, o que não gera muita coisa
+
+para acessar os tipos de audio, pode acessar o link https://www.iana.org/assignments/media-types/media-types.xhtml
+
+
+Para criar esse código, escreva audio e clique enter. após isso apague o  src="" do
+<audio src=""></audio> e deixe apenas audio <audio>
+</audio>
+dentro do audio coloque o source:src que vai gerar o <source src="" type="">
+Dentro do src="" coloque 
+
+a pasta do audio
+e dentro do type, coloque o tipo do audio, podendo ser 
+mp3(mpeg) o único tipo que muda é o mp3
+ogg(ogg)
+
+e o menos recomendado que é o 
+wav(wav)
+Para colocar o tipo escreva dentro de type"" <!--audio/mpeg-->
+<!--audio/ogg-->
+<!--audio/wav-->
+
+Juntando tudo vai ficar:
+
+<audio>
+<source src="pasta" type="mpeg">
+</audio> 
+<audio>
+ou
+<source src="pasta" type="ogg">
+</audio> 
+ou
+<audio>
+<source src="pasta" type="wav">
+</audio> <!--Evite utilizar-->
+Lembrando que a ordem é importante. Deixa sempre o mp3 que é o tipo mais aceito entre os navegadores em primeiro lugar pois assim indica que ele primeiro irá tentar carregar o tipo mp3.
+Caso nao funcione o mp3 coloque ogg em segundo lugar. 
+Caso não funcione nenhum dos dois,
+"o que é muito difícil" 
+Coloque o wav em terceiro lugar, mas evite caso o audio for muito grande, pois esse tipo é o tipo mais pesado que tem e irá deixar o site muito lento
+
+
+Para gerar a opção de começar a tocar o audio, 
+utilize o "controls", por exemplo:
+<audio controls>
+<source src="Pasta" type="tipo">
+</audio>
+Apenas esse código já gera a opção para começar o audio.
+
+Temos também a opção de começar a tocar o audio 
+automaticamente toda vez que ela reinicia o site, por exemplo no yt, voce clica em um vídeo e ele automaticamente começa a tocar o vídeo. Para isso ser possível, Utilize o comando auto play dentor do &lt;audio&gt;. Por exemplo:
+<audio autoplay>
+<source src="Pasta"type="tipo">
+</audio>
+
+Para fazer com que o audio começe a tocar novamente toda vez que ele acaba, pode utilizar o comando loop dentro do &lt;audio&gt;. Por exemplo:
+
+<audio loop>
+<source src="pasta" type="tipo">
+</audio>
+
+para falar para o seu navegador carregar o audio junto com o site, utilize o comando:
+preload="" dentro do &lt;audio&gt;
+
+dentro do preload="" existe três tipos:
+<audio preload="auto">
+<source src="pasta" type="mp3;ogg;wav">
+</audio>
+<!--irá carregar totalmente o audio antes de carregar o site, o que é pouco recomendado, pois irá demorar muito para carregar o site-->
+
+<audio preload="metadata">
+<source src="pasta" type="mp3;ogg;wav">
+</audio>
+<!--irá carregar apenas informações como: o tempo e data. Mais recomendado-->
+
+<audio preload="none">
+<source src="pasta" type="mp3;ogg;wav">
+</audio>
+<!--irá começar a carregar apenas quando a pessoa clicar para ouvir o audio-->

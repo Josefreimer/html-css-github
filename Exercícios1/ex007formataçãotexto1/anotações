@@ -1,0 +1,46 @@
+semântica foca mais no significado
+Cuidado para não utilizar a semântica detro do html
+semântica significado:
+A semântica é o estudo do significado e de fenômenos gramaticais relacionados a esse tópico
+
+
+Para transformar uma frase em negrito, utilizamos o código:
+<b> </b>
+
+porém ela só é utilizada para mudar a forma da frase. Para darmos um significado para estar em negrito, utilizamos o 
+<strong> </strong>
+visualmente, não irá haver mudanças, porém agora a frase em negrito tem um sentido de estar em negrito, não apenas mudando a sua forma
+
+
+Para colocar umam frase em itálico, porém apenas no formato itálico, ou seja não semântica. Utilizamos o comando <i> </i>
+para fazer um código itálico semântico, utilize o código:
+
+Para colocar uma frase em ênfase, utilize o código <em> </em>. Ele vai ser um código semântico
+
+Para deixar uma frase marcada, utilize o comando <mark> </mark>
+Para mudar a cor do marca texto, utilize o comando <mark style="background-color
+:cor"
+caso voce tenha muitos marca textos e quer deixá-los todos da mesma cor, crie um seletor. Vá la em cima do head e crie um style{}
+dentro do style coloque o item que voce quer mudar, nesse caso o <mark> e coloque o que voce quer mudar no estilo dele, nesse caso a cor de fundo background-color
+o comando irá ficar assim
+<style> 
+mark{
+  background-color:cor
+}
+</style>
+
+Utilize o comando <big> </big> para deixar uma frase com as letras maiores que as outras, porém é uma frase não semântica
+
+Utilize o comando <small> </small> para criar uma frase com as letras menores do que as outras, frase semântica
+
+Utilize o comando <del> </del> para criar frases com um risco em cima, como se estivesse apagado elas, onde é um texto que deve ser lido mas não considearado
+
+
+Utilize o comando <ins> </ins> para marcar um texto inserido na frase. Semântica 
+
+Utilize o comando <U> </u> para marcar um texto, deixá-lo sublinhado também, porém, é não semântico
+
+Utilize o comando <sup> </sup> para colocar um texto em cima dos outros, por exemplo, colocar um número elevado ao quadrado, ao invés de ficar 4² utilize o comando <sup>42</sup> que vai montar o 4²
+
+Utilize o comando <sub> </sub> para colocar frases em baixo de outras, por exemplo h2O, que é a fórmula da água
+Utilize <sub>h2o</sub> que irá ficar certo

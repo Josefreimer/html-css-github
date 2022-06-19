@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste 2</title>
+<style>
+h1{
+    font-weight:bolder;
+    text-align:center;
+    color:darkkhaki;
+}
+
+h2{background-image:linear-gradient(to right, rgba(128, 128, 128, 0.563) 40%, rgb(233,100,53))}
+
+div{background-color:rgba(169, 169, 169, 0.168);
+width:300px;
+border:solid 1px;}
+
+#nulo{background-color: transparent;
+        text-align: center;}
+
+        #corfundo{
+            background-image:linear-gradient(to top,#7DF4D4,#33F2BF,#3B7364)
+        }
+        #corfundo:hover{
+            background-image:linear-gradient(blue, red, green)
+        }
+
+div#corletra{
+    color:chartreuse;
+    display:inline-block;
+}
+div#corletra > p{
+    display:none
+}
+div#corlerta > p:hover{
+    display:block;
+    color:red;
+}
+#textoescondido > p{
+display:none
+}
+#textoescondido:hover{
+    color:teal;
+    background-color:rgba(128, 128, 128, 0.201)
+}
+
+#textoescondido:hover > p{
+    display:inline;
+}
+
+#linkescondido > a{
+display:none;
+font-weight:bold;
+}
+
+#linkescondido:hover > a{
+    display:inline;
+    text-decoration:none
+}
+#linkcustomizado>a{
+    display:none
+}
+#linkcustomizado::after{
+    content:' {final} ';
+    color:gray;
+    font-weight:normal;
+    text-decoration:underline;
+}
+#linkcustomizado:hover{
+    background-image:linear-gradient(to right, purple, rgb(54, 54, 255));
+    color:red;
+    text-decoration:none;
+    
+}
+#linkcustomizado:hover>a{
+    display:inline;
+}
+
+#linkcustomizado::before{
+    content:' {início} ';
+    color:gray;
+    font-weight:normal;
+    text-decoration:none;
+}
+body{background-color:rgba(128, 128, 128, 0.148)}
+
+#linkacessado>a{
+    text-decoration: none;
+
+}
+#linkacessado>a:visited{
+    color:red;
+}
+#nulo{
+    text-align:left;
+    
+}
+#nulo>a{
+    color:purple;
+    text-decoration:none;
+}
+#clicado:active{background-color:purple}
+#clicado:active>a{
+    color:orangered;
+    
+}
+</style>
+
+</head>
+<body>
+    <h1>Eae, iremos testar as divs,  pseudo-elementos e pseudo-classes</h1>
+
+    <h2>Logo abaixo você verá várias divs, sendo uma com alteração diferente da anterior</h2>
+<hr>
+<div id="nulo">
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt non laudantium, 
+</div>
+<div id="corfundo">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt non laudantium, 
+</div>
+
+<div id="corletra">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt non laudantium, 
+</div>
+<div id="textoescondido">
+texto <p>escondido</p>
+</div>
+<div id="linkescondido">
+<a href="#">exemplo</a> exemplo
+</div>
+<div id="linkcustomizado">exemplo <a href="exemplo">exemplo</a>
+</div>
+
+<div id="linkacessado">
+    <a href="https://github.com/gustavoguanabara"> acessado</a></div>
+
+<div id="nulo">
+<a href="wad">nulo</a>
+</div>
+
+    <div id="clicado">
+    <a href="qd">clicado</a>
+</div>
+
+
+
+
+
+</body>
+</html>

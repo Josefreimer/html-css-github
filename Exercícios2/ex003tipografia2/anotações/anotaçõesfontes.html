@@ -1,0 +1,39 @@
+Bonus!!
+Para criar o mesmo css para duas tags diferentes, pode-se por elas entre vírgulas, por exemplo:
+<style>
+    h1,h2{font-family:Arial, Helvetica, sans-serif}
+</style>
+
+
+Utilize o comando:
+font-family:fonte 
+Para escolher uma família das letras
+
+As fontes não se limitam apenas nos parágrafos, pode-se utilizar em outras tags para texto<!--Não sei dizer se são todas--> todos os títulos:h1,h2... funcionam
+
+Sempre que for colocar apenas a font, sempre coloque entre aspas simples ''
+por exemplo:
+<p style="font-family:'Courier New', Courier, monospace"></p>
+Percebe-se que apenas a fonte da família está entre aspas simples
+
+Nem todos os computadores, ou aparelhos, irão ter tal fonte, para isso, é recomendável que você sempre utilize mais de uma fonte dentro da font-family: que podem ser separadas sempre por vírgulas
+Por exemplo:
+<p style="font-family:Arial, Helvetica, sans-serif"></p>
+<!--O site irá utilizar a primeira fonte que der certo, por isso, a ordem importa, caso não funcione a arial, irá tentar helvetica, se funcionar para ali, se não, tenta a sans-serif... -->
+E isso é chamado de safe combination.
+Caso queria saber quais são as safes combination acesse o site: <a href="https://www.w3schools.com/cssref/css_websafe_fonts.asp"></a>
+
+Caso você queira utilizar uma fonte que qualquer dispostivo tenha, basta colocar: 
+<p style="font-family:sans-serif;"></p>
+Onde esse comando fará com que o site, escolha qualuer fonte que seja sem serifa
+A mesma coisa funciona para a fonte:
+<p style="font-family:monospace;"></p>
+
+
+Fontes:
+
+Arial:fonte sem serifa
+courier new:Serifada e monoespaçada
+verdana:Serifada, maior que a arial lateralmente
+Helvetica: serifada,porém menos que a arial
+cursive: handwriting

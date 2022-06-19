@@ -1,0 +1,62 @@
+Aqui você verá como baixar fontes externas.
+Caso queira saber como ter uma fonte sem ter que baixar, acesse o artigo 2
+<a href="anotaçõespesoestilo2.html"></a>
+Caso queira descobrir mais sobre as fontes, 
+<a href="anotaçõesfontes.html"></a>
+Para saber sobre o tamanho da letra(negrito) ou as larguras, basta acessar a parte 1:
+<a href="anotaçõespesoestilo.html"></a>
+
+Para acessar outras variações de fontes, além do google fonts, você pode acessar o site da <a href="https://www.dafont.com/pt/">dafont</a>
+
+Cuidado: nem todas as fontes personalizadas encontradas no dafont, terão todas as letras, ou seja, Pode acabar não tendo uma letra que você gostaria de usar, pode ser sinal de acentuação
+Para descobrir se tal fonte, tem todas as coisas que você esteja buscando, Basta clicar em cima da fonte, e ir rolando para baixo e ir comparando letra por letra, número por número, letras acentuadas e pontos
+
+Para utilizar a fonte que você gostou, basta clicar em cima da fonte, Clicar em baixar que vai ser encontrado la em cima do lado direito, logo no início.
+Após ter baixado, você irá abrir a pasta e extrair todos os arquivos da pasta.
+Ao abrir a pasta com os arquivos já extraidos, basta você copiar eles e colar na pasta que você irá por em html.
+
+Após tudo isso, Você irá abrir o studio code dentro da pasta que você quer criar o site com as fontes, e irá criar uma regra la dentro de style. 
+Para criar essa regra você deve utilizar o comando:
+@font-face{
+    font-family: ;
+    src:url();
+}
+Dentro da url, você deve colocar exatamente igual como está o nome do arquivo da fonte, se estiver:
+jose.png 
+Você irá ter que colocar jose.png
+
+Na parte do font-family: ; 
+Você pode colocar qualquer nome, não importa qual, pois o que importa é o src:url()
+
+Após ter colocado a url, ainda dentro do src mas fora do parentes, você irá por
+format()
+Os tipos de formatos compatíveis são:
+
+opentype            (otf)
+truetype            (ttf)
+embedded-opentype   ()
+truetype-aat     (Appel Advanced Typografy)
+svg
+
+ou seja, irá ficar:
+
+@font-face{
+    font-family: ; 
+    src:url(jose.<!-- otf,ttf -->)
+}
+Caso queira adicionar mais de uma url para que assim sua fonte seja compatível com outros navegadores, Basta você adicionar uma vírgula após o final da primeira url, ou seja,:
+@font-face{
+    font-family: ;
+    src(jose.<!-- ttf, otf -->), (jose2.<!-- ttf,otf -->)
+}
+
+Você pode colocar outros comandos dentro dessa regra "@font-face" que são: 
+font-weight: ;
+font-style: ;
+<!-- Tem outros além desses -->
+E para que essa regra funcione, você precisa apenas colocar o nome que você colocou dentro de "font-family: ; " dentro da primeira parte do font-family da tag que você quer colocar: ou seja:
+@font-face{
+    font-family:jose;
+    src:url(fonte/darling.ttf)
+format(truetype);
+}

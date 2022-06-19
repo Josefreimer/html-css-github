@@ -1,0 +1,22 @@
+Utilize o comando <a href="url">mensagem que que ir no link
+por exmeplo:Acesse meu canal:<a href ="https://www.youtube.com/channel/UCUw__RMx9nZTYh3dWOry6xQ?feature=applinks" ></a>
+Utilize o comando target="_blank" dentro do <a> </a> para criar uma nova aba ao entrar no link que voce solicitou
+e utilize o rel="external" para falar para o navegador que o link é externo(é complemento do outro)
+Para criar um link de exemplo, crie a tag &lt;a&gt; e dentro da área de link, coloque uma #. Por exemplo:
+<a href="#" target="_blank" rel="external">exemplo</a> 
+um link interno é o conjunto do servidor com o seu site
+para criar um link interno, crie outra pasta e faça um novo HTML
+Crie uma âncora(<a href="link da segunda pasta">frase onde vai ser esse link</a>) para o seu segundo site
+na criação do rel de um link exterior voce utiliza o rel="external".
+Para criar um rel de um link interior que avança para a próxima página voce utiliza rel="next"(próximo)
+Para criar um rel que volta para a página anterior utiliza rel="prev" que é previous(anterior)
+Quando voce quer criar um link de um site, mas não sabe se é confiavel, utilize o <a href="link" rel="nofollow">frase</a>
+Para dizer ao servidor que voce quer entrar no link mas continuar na mesma página, utilize o comando target="self"(própria página)
+caso voce queria criar um link interno que esteja em outra pasta, utilize o comando 
+../url significa: volte uma pasta
+./url significa que vai ficar na mesma pasta
+(linux)
+Utilize o comando download="pasta" dentro do <a> 
+e type="aplication/estilo" por exemplo:type="aplication/pdf" tudo dentro do comando <a> antes de fechar o primeiro a
+por exemlo:<a href="link" download="pasta" type="aplication/pdf">
+para descobrir outros tipos de type(tem vários e não segue um padrão) acesse o link <a href="https://www.iana.org/assignments/media-types/media-types.xhtml"target="_blank"rel="unfollow">ianatypes</a>

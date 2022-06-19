@@ -1,0 +1,45 @@
+<strong>Nem em class e nem em Id pode ser classificada por números, apenas letras</strong>
+
+O seletor(tag) class é parecido com o seletor(tag) Id --------------->     <a href="anotações001ID.html"></a>
+Comando:class=""
+
+Porém a principal diferença é que, enquanto o seletor(tag) id irá customizar apenas um seletor(tag) específico, o seletor(tag) Class irá customizar vários 
+seletores ao mesmo tempo ou seja
+<p class="um"></p>
+<h1 class="um"></h1>
+Irá customizar os dois seletores(tags) ao mesmo tempo da forma correta.
+
+<strong>Lembrando que utilizar id para customizar mais de um seletor(tag) ao mesmo tempo, estará errado, Utilize Class</strong>
+Evite colocar nomes extremamente específicos para a sua classe/id, ou seja, não é por que seu parágrafo será da cor verde que você deverá utilizar:
+<p class="verde" style="color:green"></p>
+
+Tente colocar o motivo daquela tag estar ali por exemplo:
+<p class="principal01" style="color:green"></p>
+
+Lembrando que quando você for customizar o class exteriormente você deverá utilizar o . ou seja
+<p class="teste01"></p>
+<style>
+    .teste01{color:green}
+</style>
+
+<strong>Você pode utilizar mais de uma configuração em um mesmo class ou seja
+<style>
+    .um{color:blue;}
+    .um{text-align:justify;}
+    .um{font-weight:bold;}
+
+</style>
+<p class="1 2 3"></p>   <!-- Você não precisa separar entre vírgulas -->
+</strong>
+
+Se você quiser, você pode misturar o id com o class, basta apenas colocar dentro do seletor(tag) o id e a class logo em seguida, ou seja:
+
+<!-- Forma simplificada -->
+<head>
+    <style>
+        .um{color:green}
+        #um{background-color:blue}
+    </style>
+</head>
+<h1 id="1" class="1"></h1>
+Esse título ficara com a cor verde com o fundo azul

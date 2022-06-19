@@ -1,0 +1,24 @@
+Assita o vídeo <a href="https://www.youtube.com/watch?v=E01LDVj0Rpg&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n&index=31">para aprender a formatar as imagens</a>
+
+Utilize o comando <picture> para criar várias fontes de imagens</picture>. por exemplo
+<picture><img src="imagens/foto-g.png" alt="primeira imagem"></picture> 
+Utilize o comando source e selencione o media type que vai gerar o comando:
+<source media="(min-width: )" srcset="" type="image/">
+Dentro desse comando mude o "(min-width: )" para "(max-widht: ) <!--opcional--><!--essa mudança Serve para definir a altura máxima da imagem -->
+No Caso do exercício feito, voce utilizou três imagens. uma com 1000px outra com 700px e a ultima com 300px. <!--Pode começar com a imagem grande ou pequena(opcional)-->
+Como você vai trabalhar com tamanho máximo da imagem, Voce pode começar com a imagem grande, entao utilize o código <source media="(max-widht:1000)" srcset="imagens/foto-m.png" type="image/png"><!--dentro do type, coloca o tipo da imagem, nesse caso png-->
+
+importante, evite colocar exatamente o mesmo tamanho de pixels que a imagem, para evitar criar problemas. Tente colocar 50 pixels a mais, ou seja, 1000+50=1050px
+
+<!--Utilize esse código dentro do <picture> e em cima do <img>-->
+
+<!--O motivo de usar o tamanho da foto grande porém utilizar a foto de tamanho pequeno é pq até o 1000 utiliza a foto media, a partir de 1001 usa a foto grande-->
+
+
+<!--o ctrl space nao funciona nesse código-->
+
+<!--Ao criar mais de uma imagem dentro do picture, comece sempre com a imagem menor em cima e vai aumentando conforme vai colocando os códigos em baixo, por exemplo:
+<picture> <source media="max-width:750" srcset="imagens/foto-p.png" type="image/png
+<picture> <source media="max-width:1050" srcset="imagens/foto-m.png" type="image/png"
+<img src="imagens/foto-g.png" alt="Imagem flexivel"
+Percebe-se que a maior imagem eu utilizo o código simples de imagem, isso porque é ela que vai ser a base de todas as outras imagens menores-->

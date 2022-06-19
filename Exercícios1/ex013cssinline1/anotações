@@ -1,0 +1,16 @@
+Para mudar a cor do título principal, utilize a tag <h1 style="color:cor;">
+Nunca se esqueça de por o ; no final de cada comando no css
+Para mudar a cor do subtítulo, mesmo padrão: <h2 style="color:cor;">
+Para mudar a cor do parágrafo, mesmo padrão <p style="color:cor;">
+Para mudar a cor de fundo, Vá em cima do title e escreva  <body style=" background-color=cor"; > </style>
+Para mudar a fonte da letra, vá em cima do título junto com o body e coloque o comando font-family:fonte Por exemplo.
+<body style="font-family:Arial, Helvetica, sans-serif. "><!--font-family serve para definir o nome da familia da fonte. Nesse caso: arial-->
+Para deixar o parágrafo organizado, alinhado. utilize o comando style="text-align:justify;"dentro do <p>. Por exemplo:
+<p style="text-align:justify;"><!--esse comando vai deixar o parágrafo alinhado com a próxima linha, Recomendo muito usar sempre-->
+
+Para mudar o tamanho da letra, vá em cima do título junto com o body e coloque font-size="font em px" por exemplo
+<body style="font-size: 20px;">
+Para mudar o tamanho em relação ao px utilize o <h1 style="font-size:1em"> o 1em é o padrão, significa que não vai mudar, porém se for menor ou maior como por exemplo <h1 style="font-size:0.7em"> ou <h1 style="font-size:2em"> significaria que será 0.7 vezes o 20px lá em cima, ou 2 vezes o 20px. 
+<ptext-align:right> <!--irá colocar o parágrafo á direita do site bem no canto-->
+Utilize o comando "text-decoration:underline"  dentro do comando h1 ou p para por uma linha em baixo da frase, por exemplo interno: h1{text-decoration:underline}<!--Esse comando vai criar uma linha em baixo de todos os títulos>
+

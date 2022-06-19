@@ -1,0 +1,41 @@
+Responsividade, é quando você adapta o seu site para diferentes aparelhos, ou seja, a o tamanho de uma imagem para o computador é diferente para o tamahno da imagem de um celular, ou quando o celular está em pé, e você vira deita ele, a imagem muda.
+
+è normal você colocar no maximo 1220 px<!-- (porém não é obrigatório) -->de largura para que você coece a criar blocso adaptaveis.
+Fazendo assim você nao preicisar ficar movendo a sua oabeça ou a teal do seu dispositivo pra conseguir ler as informações ou até mesmo ver as imagens. 
+
+                    Exemplos:
+
+
+Um block-level, por padrão, ocupa 100% da tela, ou seja, um texto grande, ele automaticamente irá quebrar a linha ou trazer de volta na mesma linha, depende apenas do tamanho da tela
+Porém, isso não vale para imagens, pois, imagens já vem com um tamanho próprio, que pode ser customizado com o Gimp, por isso, imagens não se adaptam a tela
+
+Você pode instalar a extensão(window resizer)
+<a href="https://chrome.google.com/webstore/detail/window-resizer/kkelicaakdanhinjdeammmilcgefonfh/related?hl=pt-br">Clique nesse link para ir para a página deles</a>
+
+Caso você ja tenha uma largura/altura específica para uma imagem ou texto, você pode colocar esse texto com width/heigth customizado com aquela largura/altura, e isso irá fazer com que o texto ou a imgem não quebrem.
+porém, isso só vai funcionar até a largura em específico, por exmeplo: colocar 800px de largura, e diminuir a tela para menos que 800, irá quebrar a imagem
+
+Porém, para criar configurações ainda mais específicas, você pode colocar dentro do seletor, 
+min-width:
+max-width:
+
+Onde o max-width: serve para que a caixa de texto continue do mesmo tamanho mesmo que a largura da tela seja maior, ou seja:
+Caso a tela for de 2000px; e o max-width:700px;
+Dentro desses 2000px a caixa de texto vai ocupar apenas 700px; agora a partir dos 700px para menos, o texto vai se quebrando, porém para que a imagem vá se adaptando mesmo abaixo do 700px, existe o min-width: onde até a largura mínima definida, ele irá ir diminuindo, por exemplo:
+min-width:320px;
+a partir de quando a tela for menor que 700px que foi o exemplo acima, o texto irá se moldando até que fique com 320px no minímo. Caso fique menos que isso, o texto começa a criar uma borda lateral, onde você tem que arrastar para começar a ver
+
+E para fazer algo parecido com a imagem, basta colocar dentro da tag main, picture, ou aside, a tag:
+<style>
+    main,picture,aside>img{
+        width:100%;
+    }
+</style>
+
+Ou você pode envelopar com o picture e o source: ou seja
+
+<picture>
+    <source media="(max-width:x)" srcset="y" type="image/z">
+    <img src="y" alt="a">
+</picture>
+onde você pode definir a largura máxima que a imagem irá ocupar.

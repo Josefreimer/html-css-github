@@ -1,0 +1,104 @@
+<a href="anotações.html">parte 1</a>
+
+O comando:
+display:block
+Sempre irá criar uma caixa box-level
+
+o comando:
+display:inline
+Sempre irá cirar uma caixa inline level
+<strong>inline level não pode ser alterada a altura e largura</strong>
+O comando:
+display:inline-block
+Sempre irá criar uma caixa inline-level com características box-levlel<strong>que pode ter sua altura e largura alterada</strong>
+
+border-width: é a expressura da borda
+border-style: é o estilo da borda
+border-color: é a cor da borda
+<strong>Essas configurações de width e height, funcionam apenas em comandos box-level</strong>
+
+<strong>shorthand:
+    Os comandos mais utilizados de border em shorthand:
+primeiro vem a largura, estilo e por fim a cor, ou seja:
+border:largura estilo cor
+border:10px solid gray
+Lembrando que não pode separar entre vírgulas
+
+</strong>
+
+body{}
+ não é a página em si, mas sim o conteúdo que será visualizado
+
+ border-style:dashed
+ cria uma borda pontilhada porém mais largo
+
+ border-style:dotted
+ Cria uma borda pontilhada com pontos normais
+
+ border-style:double
+ Irá criar uma borda de linha dupla
+
+ border-style:groove
+ Cria uma borda com uma margem em 3d
+
+Para facilitar o uso do padding você pode escrever direto:
+padding-top:
+padding-right:
+padding-left:
+padding-bottom
+
+Ou então em forma de shordhand, basta apenas lembrar no sentido horário, ou seja
+
+Caso queira centralizar utilizando shorthand, basta colocar:
+topo, direita, baixo, esquerda
+padding:cima/auto/baixo/auto
+
+Que irá colocar no meio e sempre deixará no centro independente de quem esteja vendo
+<!-- Caso todos os lados forem iguais, basta colocar apenas:
+padding:x px -->
+<!-- Para colocar valores de cima e baixo iguais e ambos lados iguas porém diferentes do de cima e baixo, utilize apenas:
+padding: cima/baixo direita/esquerda -->
+<!-- lembrando que o computador está virado contra você, ou seja, a sua direta é a esquerda dele -->
+
+margin<!-- Lembrando que ela fica no exterior do padding -->
+
+segue o mesmo sentido do padding
+margin-top:
+margin-right:
+margin-left:
+margin-bottom:
+
+Ou em forma de shorthand, basta apenas lembrar no sentido horário, ou seja
+topo, direita, baixo, esquerda
+
+Caso queira centralizar utilizando shorthand, basta colocar:
+margin:cima/auto/baixo/auto
+Que irá colocar no meio e sempre deixará no centro independente de quem esteja vendo
+<!-- Caso todos os lados forem iguais, basta colocar apenas:
+marign:x px -->
+<!-- Para colocar valores de cima e baixo iguais e ambos lados iguas porém diferentes do de cima e baixo, utilize apenas:
+marign: cima/baixo direita/esquerda -->
+<!-- lembrando que o computador está virado contra você, ou seja, a sua direta é a esquerda dele -->
+
+Você pode utilizar a margin para separar uma caixa da outra
+
+Para centralizar uma caixa, não utilize o margin, pois o tamanho do aparelho da pessoa pode mudar o local que a caixa está configurada pelo margin
+Para resolver isso e centralizar a caixa, utilize o comando:
+
+margin:auto;
+Apenas esse comando será o suficiente para colocar a caixa centralizada, e automaticamente irá sempre estar no centro independente do aparelho que a pessoa estiver utilizando
+
+Se for um texto, utilize o text-align:center
+
+<!-- pouco utilizado, mas eficiente -->
+outline, fica entre a borda e a margin, onde é como se fosse uma borda em si, porém uma extra, e pode ser configurada igual ao border
+ou seja
+outline-width:
+outline-style:
+outline-color:
+
+shorthand:
+largura estilo cor
+outline-width: outline-style: outline-color: ;
+
+outline-width:10px outline-style:dashed outline-color:darkgray ;

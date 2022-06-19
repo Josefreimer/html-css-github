@@ -1,0 +1,52 @@
+Para começar o processo para utilizar as bordas decoradas, abra o gimp > arquivo>novo 
+largura:80
+altura:80
+resolução:70
+cor de fundo:trasparente, ou com cor
+
+dentro do qudrado, puxe três retas, Caso não lembre como, olhe um pouco em cima do quadrado que você criou, vai ter vários números né, então, clique e segure em qualquer um desses números e puxe para baixo, mesma coisa com os números no lado.
+Puxe a quatro retas até ficar um desenho como um jogo da velha.
+Recomendo que aumente o zoom do quadrado para que fique mais Fácil ao colocr as retas no lugar delas.
+onde irá ter 9 quadrados ao total,
+Após isso, você vai criar uma bolinha, indo na parte de "Ferramenta de Seleção Elíptica" Logo ao lado da ferramenta de movimento que é o primeiro icon (Em baixo de onde você cria um novo arquivo)
+Você vai criar uma bolinha onde preecha mais que a metade de cada um dos 9 quadrados, porém não preencha todo o quadradinho. Após preencher o primeiro quadrado, você pinta ele clicando na opção:"Ferramenta de preenchimento" (icon de um balde,última opção priemira fila" após isso, vai no lado direito e duplíca a camada(Clicando com o botão direito do mouse em cima da camada e clicando em duplicar camada), após isso, clique na opção "Ferramenta de movimento" e arraste a camada para os próximos quadrados. Coloque em todos menos no quadrado do meio, após isso, pinte os círculos dos cantos(4) de outra cor.(Caso não esteja conseguindo pintar as outras bolinhas, aperte ctrl+shift+a) e selencione a camada da bolinha e pinta ela.
+Após isso, exporte o arquivo com um nome fácil e que faça sentido, por exemplo"bordacustomizada.png" provavelmente ele já irá savar em png, então você não irá precisar onverter a imagem para outro tipo de imagem.
+Após isso, crie um novo arquivo dentro do studio code e dentro de style, você coloca a tag que você quer colocar a borda, por exemplo(exemplo do vídeo) 
+<style>
+    h1{
+        border:10px solid black; 
+        padding:7px;
+    }
+</style>
+
+Após criar a tag, ainda dentro dela, você coloca:
+
+<style>
+    h1{
+        border:10px solid black; 
+        padding:7px;
+        border-image-source: url(/* nome do arquvio salvo */);
+    }
+</style>
+<strong>Sempre deixa a customização border: px style color. Pois sem ela, nada do que irá ver daqui pra frente funcionará</strong>
+Porém, só com isso, a sua borda vai estar toda errada, e para isso você precisa ir organizando ela,
+
+Utilize o comando:border-image-slice: número <!-- sem medida --> para fatiar a imagem da sua borda, Quando mais fatiado menor fica
+
+Utilize o comando: border-image-repeat:repeat para ficar repetindo várias vezes a imagem
+
+Com esses dois comandos, você já tem a borda colocada, agora você tem que customizar ela para que ela fique do jeito que você quiser.
+
+Você vai no chrome dentro da sua página, e abre o inspencionar, e vai na parte de css, e procura o: border-image-slice:número.
+Nele você vai aumentando/diminuindo até que fique bom, após isso, pegue a informação e copie e cole dentro do studio code e pronto. Mas você pode melhorar ela ainda mais com os seguintes comandos:
+
+Você pode substituir o: border-image-repeat:repeat por: border-imagem-repeat:stretch, 
+Esse comando vai pegar a borda e ao invés de ficar repetindo ela como foi no repeat, ele vai puxar ela, ou seja, vai esticar a imagem.
+Você pode utilizar qualquer uma das duas opções, contanto claro, que sempre seja uma de cada vez já que uma elimina a outra.
+
+Você pode customizar o tamanho da borda, para tentar melhorar ela
+
+Existe o shorthand para todas essas opções que é:
+
+border-image:source:slice:repeat ou seja:
+border-image:url('nomedoarquivo') númeroquevaifatiar repeat/stretch 

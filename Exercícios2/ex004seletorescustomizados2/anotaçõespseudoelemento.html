@@ -1,0 +1,52 @@
+acesse a parte 1:
+<a href="anotações002class.html">pseudoclasse</a>
+<!-- 
+div == caixa vazia
+
+. == class
+
+# == Id
+
+: == pseudoclass
+
+:: == pseudoelement
+
+> == children por exemplo(div > p{}) (tudo que tiver no p dentro da div será customizado)
+
+hover == passar mouse por cima(pseudoclass)
+
+after == depois de tudo (pseudoelement)
+
+before == antes de tudo (pseudoelement)
+content:'' conteúdo
+
+a:active == quando o link estiver sendo ativo  
+pseudoclass
+
+a:visited == quando o link já foi visitado
+
+text-decoration:underline == deixa sublinhado
+
+text-decoration:none == retira todo tipo de 
+decoração 
+-->
+
+pseudoclasse e pseudoelementos possuem comandos parecidos:
+pseudoclasse=:
+pseudoelementos=::
+a diferença é que no elementos você coloca dois "dois pontos"
+
+Caso você queira avisar que um aquele texto é um link, você pode utilizar o pseudoelemento:
+<style>
+a::after{
+    content:' link ';
+
+}
+</style>
+
+a é o comando do link
+:: é o comando da pseudoclasse
+after significa depois de tudo(nesse caso link)
+
+content significa conteúdo 
+e entre aspas simples, é o texto que você quer mostrar, pode ser qualquer coisa

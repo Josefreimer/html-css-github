@@ -1,0 +1,38 @@
+Utilize o comando <ol> para criar uma lista ordenada e
+Utilize o comando <li> para colocar cada item da lista, eles juntos vão criar uma lista numerada sozinhos.
+dentro do <ol> tem outro comando para personalizar a sua lista. Tem as seguintes opções:
+<ol type="1"><!--Faz a lista em ordem númerica-->
+<ol type="A"><!--Faz a lista com letras maiúsculas-->
+<ol type="a"><!--Faz a lista com letras minúsculas-->
+<ol type="I"><!--Faz a lista com os números romando em maiúsculo-->
+<ol type="i"><!--Faz a lista com os números romanos em minúscula-->
+
+Utilize o comando <ul> para criar uma lista que não possui uma ordem. E utilize novamente o comando il para criar a lista
+Ele também tem os tipos que são:
+<ul type="disc"><!--bolinha fechada, tipo padrão do comando ul-->
+<ul type="circle"><!--
+Bolinha aberta-->
+<ul type="square"><!--
+Quadrado-->
+
+Você pode misturar os comandos ou colocar eles entre si, por exemplo:
+<ol>
+<li>
+comida favorita
+</li>
+<ol>
+
+<li>banana</li>
+<li>maçã</li>
+...
+</ol>
+</ol>
+Utilize o código<dl> para criar uma lista de definição e <dt> para criar o termo da definição e <dd> que é a descrição. Por exemplo:
+<dl>
+<dt>Final de semana</dt>
+<dd>Dias para descansar e ficar com deus</dd>
+<dt>dias da semana</dt>
+<dd>dias para se esforçar</dd>
+<dt>comidas gordurosas</dt>
+<dd>pizza, lanches, chocoloate...</dd>
+</dl>

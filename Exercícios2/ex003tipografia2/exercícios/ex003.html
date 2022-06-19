@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentando aplicar fontes externas</title>
+<style>
+@font-face {
+    font-family:'jose';
+    src: url(fonte/Type\ Keys\ Filled.ttf) format('truetype'), url(fonte/Type\ Keys.ttf) format('truetype');
+    /* opentype (otf) truetype (ttf) */
+font-style:normal;
+width: 500px;
+font-weight: normal;
+}
+
+@font-face {
+    font-family: 'darling';
+    src: url(fonte/darling.ttf) format('truetype');
+    font-style:normal;
+    width: 500px;
+    font-weight: normal;
+}
+@font-face{
+    font-family:'exercito';
+    src:url(fonte/1942.ttf) format('truetype')
+}
+
+body{background-image:linear-gradient(to right, rgba(0, 128, 0, 0.334) 40%,rgba(0, 0, 255, 0.289),rgba(128, 0, 128, 0.365),rgba(255, 0, 0, 0.382),rgba(255, 192, 203, 0.382))}
+
+h1{
+    font-family:'jose', sans-serif;
+    font-style: normal;
+    font-weight:lighter;
+    }
+p{font-size:20px;
+font-family:darling
+}
+
+h2{font-family:'exercito';
+font-style:normal;
+font-weight: normal;
+}
+    </style>
+
+</head>
+<body>
+    <h1>Testando fontes externas</h1>
+    <h2>Testando novas fontes</h2>
+
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, sed illum ullam deleniti accusantium doloribus. Quibusdam ut veritatis illo, laborum placeat nisi nihil ab maxime temporibus unde veniam repudiandae laboriosam?Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi cumque sapiente ut odit nemo quas mollitia repellendus ratione suscipit nesciunt saepe velit voluptate, aperiam obcaecati hic nulla facere sed ex?lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt neque unde optio id officia. Beatae nobis quasi dolorum quibusdam, consectetur eveniet asperiores aliquid amet ipsam ad ut dolor inventore incidunt!
+    </p>
+
+</body>
+</html>

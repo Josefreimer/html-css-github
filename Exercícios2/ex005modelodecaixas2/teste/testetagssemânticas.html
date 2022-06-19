@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        header{text-align:center;
+        margin:40px 0px 0px 0px}
+article#um > h3{
+    font-family: Arial, Helvetica, sans-serif;
+margin:0px 0px 0px 10px;
+font-weight:bolder;
+color:orangered;
+font-size:25px;
+}
+article>h4{
+    font-weight:normal;
+    font-size:17px;
+    font-family:monospace, sans-serif
+}
+main{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:normal;    
+}
+aside{
+    float:right;
+    background-color:gray;
+    height:180px;
+    padding:10px;
+    border-radius:10px;
+    margin:0px 0px 10px 10px;
+}
+aside>nav>a{
+  margin:-3px 0px 0px 60px;
+  background-color:gray;
+  padding:2px;
+  
+}
+nav#nav2{margin:0px 0px 0px -20px;}
+nav#nav2>ul>li>a:active{
+ color:yellow;
+}
+section{background-color:rgba(128, 128, 128, 0.444);
+    border-radius:10px;
+    text-align:justify;
+    margin: 0px 0px 0px 40px;
+width:300px;
+padding:5px;}
+section>article{
+    font-family:Arial, Helvetica, sans-serif;
+    color:orange
+}
+section>main{
+    color:yellow;
+    font-family:arial;
+}
+footer{
+    background-color:rgba(128, 128, 128, 0.177);
+    text-align:justify;
+}
+footer>nav>dd>ul{
+    margin:0px 0px 0px -60px;
+    color:yellow;
+}
+footer>nav>dt>dl{
+    text-align:justify;
+    font-weight:bold;
+}
+footer>nav>dt>dl::after{content:':'}
+footer>nav>dt>dl::before{content:' - '}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Título principal</h1>
+    </header>
+
+<article id="um">
+<h3>tags semânticas</h3>
+<h4>Tags que podem substituir a div</h4>
+</article>    
+
+<main>
+<p>Temos 7 novas tags que vieram junto com o html:5 e elas são: header, article, main, aside, footer, nav, section. Onde cada uma delas, podem estar misturadas entre si</p>
+</main>
+
+<aside>
+<img src="logocss.png" alt=""logocss>
+<nav><a href="youtube/Jose-Reimer.com" target="_blank"rel="external">Jose Reimer</a></nav>
+</aside>
+
+<nav id="nav2">
+    <ul>
+<li><a href="#">link1</a></li>
+<li><a href="#">link2</a></li>
+<li><a href="#">link3</a></li></ul>
+</nav>
+
+<section>
+<article>
+    <h3>Motivos para utilizar as novas tags</h3>
+ </article>   
+    <main>
+        <p>Graças as novas tags, fica muito mais organizado visualmente, tanto para o seu navegador conseguir entender, quanto para utilizar os códigos e configura-los em css, já que agora, não precisa de um id ou classe</p>
+    </main>
+</section>
+
+
+<footer>
+    <p>Caso queira relembrar o conteúdo que foi utilizado dentro dessa página teste, pode acessar: </p>
+    <nav>
+        <a href="anotações03.html">Explicando cada um</a>
+  <dt>
+      <dl>Canais recomendados</dl>
+    <dd>
+        <ul>
+            <li> <a href="https://www.youtube.com/results?search_query=hcode">https://www.youtube.com/results?search_query=hcode</a>hcode</li>
+            <li><a href="https://www.youtube.com/c/cfbcursos">CFB</a> </li>
+            <li><a href="https://www.youtube.com/c/CursoemV%C3%ADdeo">Curso em video</a>
+            </li>
+        </ul>
+    </dd>
+    </dt>
+    </nav>
+
+</footer>
+
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+Para criar uma nova pasta rapidamente, crie um link com o nome da pasta que quer criar e segure o ctrl e clique em cima por exemplo: <a href="teste01.html" target="_self">teste</a>
+
+Para colocar o mesmo estilo de uma página para a outra rapidamente e facilmente utilize o comando no lugar do style: link:css 
+que vai ficar
+<link rel="stylesheet" href="style.css">
+Dentro do href="" voce pode colocar o nome que quiser, mas tente criar um nome de fácil acesso e então, no nome que você criou, segure ctrl e coloque o style dentro dessa nova página criada, porém la no começo de tudo coloque o comando:
+@charset "UTF-8"
+Esse comando é uma regra criada para indicar as permissões que o css pode utilizar.
+Ao utilizar o <link rel="stylesheet" href="nome"> você pode criar várias páginas e no lugar do style em cima do title, apenas coloque o comando do link:css com o nome que voce colocou que ele automaticamente vai ficar com todos os estilos indicados
+
+
+Voce pode também utilizar mais de um link:css para por exemplo, colocar algumas páginas em específico que utiliza um estilo diferente, Basta apenas criar esse estilo clicando com o ctrl no href="nome da pasta" e dentro dessa pasta coloque o novo estilo, após isso, vá na página do site e escreva <link rel="stylesheet" href="nome do novo estilo"> que ele vai automaticamente colocar o novo estilo 
+
+Você pode misturar os comandos, colocando o link:css mais o style logo em baixo, que vai fazer um estilo novo somente para aquela página. No mesmo arquivo, você pode utilizar o css inline(mesma linha) css interno e por último, o css externo

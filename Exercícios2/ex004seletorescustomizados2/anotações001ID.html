@@ -1,0 +1,36 @@
+<strong>
+Tudo que for id em html == # em css
+Tudo que for class em html == . em css
+</strong>
+<strong>Nem em class e nem em Id pode ser classificada por números, apenas letras</strong>
+
+Utilize o "id" dentro de uma tag para identifica-la como "especial", onde tudo que você personalizar dentro dessa id, irá afetar apenas tags que possuem essa id, por exemplo:
+<h1 id="Nome da id(qualuer nome)"></h1>
+<h1 id="teste01"></h1>
+<strong>Forma genérica</strong>
+<style>
+h1{
+    color:black;
+  }
+
+h1#teste01{
+    color:blue;
+          }
+</style>
+Todos os títulos terão a cor da letra preta, graças ao css externo, porém apenas o <h1 id="teste01"></h1> terá a cor azul
+<!--Lembre-se de sempre colocar: tag+ id="" para identificar uma tag e tag#id para configurar a tag -->
+
+Ou você também pode simplificar para apenas a identificação, ou seja:
+<strong>Forma específica</strong>
+<style>
+    #teste01{
+        color:blue;
+            }
+</style>
+<strong>Nunca se esqueça de colocar #tag tanto na forma específica quanto na simplificada</strong> Tudo o que tiver
+
+<strong>Você não pode utilizar o mesmo id para outros seletores(tags) ou seja
+ <h1 id="1"></h1>
+ <p id="1"></p>
+ Vai estar errado, irá funcionar porém estará errado. E a forma correta para customizar dois seletores(tags) ao mesmo tempo é utilizando o seletor(tag) "class" <a href="anotações002class.html"></a>
+</strong>

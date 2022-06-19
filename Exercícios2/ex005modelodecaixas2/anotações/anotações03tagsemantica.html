@@ -1,0 +1,73 @@
+    div
+A tag div é como se fosse uma caixa block-level, ou seja, quebra de linha junto com a linha inteira, e dentro dessa caixa, você pode colocar diversos conteúdos, como:
+<p></p> - h1-h6 - background-color - margin - border...
+span
+a tag span é parecido com a tag div, porém, ao invés de ser block-level, ela é inline-level, ou seja, mesma linha com uma largura que combina com a frase, e ela é mais específica para frases de um texto, ou até mesmo um texto em si, também podendo ser customizado com css.
+
+Porém, essas tags, são tags não-semânticas, porém ainda podem ser utilizadas sem nenhum problema. <strong>Lembrano que a ordem não importa muito, É importante você saber o que cada uma significa, mas você pode misturar uma com as outras</strong>
+<strong>Se for nescessário, vá vendo vídeos no canal desse cara: 
+    <nav>
+        a href="https://www.youtube.com/c/cfbcursos">
+        Ele ensina sobre cada uma</a>
+    </nav>
+</strong>
+
+Agora em html:5 vieram novas tags semânticas, e elas são:
+header<!-- Cabeçalho -->
+article<!--Artigo do site, falar sobre o que irá ver no site-->
+main<!--Conteúdo principal da página-->
+aside<!--Conteúdo secundário ao lado da página, propagadas, imagens,-->
+footer<!-- rodapé do site, conteúdo extra -->
+nav<!--Parte para por links de navegação-->
+section<!--nova seção(div disfarçada)-->
+Para o conteúdo principal(cabeçalho), se utiliza a tag header<!-- Não confunda com head, pois, head é a cabeça do site, header é o cabeçalho -->
+
+Temos o conteúdo principal,(imagens/textos), se utiliza a tag main
+
+Para por seus liks, você pode utilizar o: nav e dentro de nav utiliza-se o <a href=""></a> para por os links. Dentro dessa tag, você pode utilizar as listas (ol,ul dt) ou apenas as âncoras mesmo, podendo ser formatados do jeito que você quiser. Você não precisa colocar todos os links, apenas especificamente dentro de nav, você pode colocar dentro de header, main, section, footer, ou aside.
+Você pode repetir várias vezes em vários locais diferentes a tag nav, podendo incluir todos os links do seu site e links repetidos.(display block)
+
+
+Temos também o rodapé,(footer) onde você coloca informações extras do seu site, mas que ainda estão relacionadas com ele, por exemplo: coloca imagens do seu site que não são de extrema importância para o conteúdo, ou você coloca uma finalização do seu site: quem o desenvolveu, quando, por que...
+
+section: é uma tag generalizada, onde você coloca ela para substituir uma div, por exemplo, nela você pode colocar um conteúdo falando sobre o seu site, mas caso você fale sobre o que irá encontrar nele, ou um título, é melhor usar o header, ou se for colocar um texto principal, utilize main, caso seja um artigo, utilize article... Resumindo, é uma tag onde você utiliza ela, caso nenhuma dessas opções seja a certa
+
+ (pt-2)Temos a tag section, que é onde você coloca o conteúdo do seu site, por exemplo:
+<section>
+    <h1>título</h1>
+    <nav><a href="">navegação</a></nav>
+    <article><!--tag para o texto -->
+        <main><p>Texto principal</p></main>
+    </article>
+    <main><p>texto principal embaixo do artigo</p></main>
+</section> -->
+
+
+
+article, é o artigo do seu site, onde você coloca informações sobre o que a pessoa irá ver nos site, você pode colocar o article, dentro de main, onde você irá explicar o que terá dentro do texto principal, ou seja:
+<main>
+    <header>
+    <h2>Título</h2>
+        <article>
+    <p>parágrafo</p>
+        </article>
+</header>
+Texto principal
+</main>
+
+aside, normalmente é aquele conteúdo que vai na parte esquerda/direita do conteúdo principal(section>article) que pode ser propagandas,imagens... Podendo ser o conteúdo secundário da sua página 
+Ela possúi o display:block
+
+main,Texto/conteúdo principal da página, onde esse conteúdo não irá se repetir em nenhum outra página, por isso ele é o principal, ou seja, apenas um main por página já é o suficiente, se utilize a tag main, para por o texto que fala sobre o prinpal motivo da pessoa estar acessando a sua página.
+Conteúdos que irão se repetir em outras páginas, não são recomendáveis, por eles dentro da tag main
+Um exemplo de tag para se por dentro do main é o título, ou seja:
+<main>
+    <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit</h1>
+</main>
+Podendo também por outras coisas relacionadas ao conteúdo principal, como parágrafos, imagens, ou até mesmo links que não irão se repetir nem no começo ou final da página e nem em outas páginas do seu site, por exemplo:
+<main>
+    <h1>título da página</h1>
+    <p>Conteúdo principal</p>
+    <img src="" alt="">
+<!--tag para links--><nav><a href="#">Links sobre o texto</a></nav>
+</main>

@@ -1,0 +1,28 @@
+
+/*corrigir*/
+
+body{
+ background-image:linear-gradient(to right, rgb(255, 111, 0),rgb(0, 0, 255,0.4));
+ background-attachment:fixed;
+}
+    h1{color: rgb(000,000,000,0.5);
+        text-shadow:5px 3px 8px rgb(100,100,100,0.8)}
+h2{color:rgb(150,30,10);
+    text-shadow:5px 3px 4px rgba(232, 39, 1, 0.5)}
+
+p{color:rgb(000,000,000);
+    text-align:justify;
+    text-shadow: 6px 5px 4px rgb(84, 82, 82);
+    
+}
+
+main{margin:auto;
+    font-family:arial;
+    font-size:1em;
+    padding:0px 6px 10px 10px;
+    width:700px;
+    border-radius: 6px;
+    background-color:rgba(131, 10, 10, 0.2);
+    text-align:justify;
+    box-shadow:10px 7px 10px rgb(100,100,100,0.250);
+    }

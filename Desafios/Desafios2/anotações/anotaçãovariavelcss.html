@@ -1,0 +1,39 @@
+as variaveis guardam programas que serão usados mais para frente
+Pensa nelas como uma id ou class
+
+root:
+Essa pseudoclasse serve como uma raiz da arvore do documento, onde tudo que você colocar dentro de root, irá servir para o documento inteiro.
+E você pode criar variaveis dentro do root
+
+Todas as variáveis dentro de css começa com duas --nome:
+Lembrando que o nome sempre tem que estar tudo junto
+
+após os dois pontos você coloca as configurações dessa variavel
+ou seja:
+<style>
+    :root{
+        --cor1:black;
+        --cor2:white;
+        --cor3:red;
+        --cor4:green;
+        --cor5:blue;
+    }
+</style>
+
+Para você colocar essas variáveis em ação, você pode colocar um "color:" e dentro das cores que irá aparecer na lista que o stuio code mostra para te ajudar, vai lá no final e irá aparecer as cores que você quer
+Ou de um jeito mais rápido, você pode colocar:
+color:var(--cor1);
+Essa cor irá ficar preta, pois eu criei uma variável com o nome de "cor1" e configurei ela para que ela fique preta
+Você pode utilizar esse mesmo comando para várias vezes diferentes
+
+Você pode colocar tudo qualquer tipo de função para a sua variável, não se prede apenas a cores. por exemplo:
+
+<style>
+    :root{
+        --fonte1:arial, helvetica, sans-serif;
+    }
+</style>
+Percebe-se que mesmo que eu utilizei o código de fontes, você não precisa colocar, &lt;font-family:arial, helvetica, sans-serif &gt;
+
+
+<strong>Lembre-se sempre de colocar nomes que façam sentido com a configuração que você irá por, pois isso mais para frente será muito útil, principalmente quando tiver várias e várias variáveis diferentes.</strong>

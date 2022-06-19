@@ -1,0 +1,44 @@
+p:hover{transition:.3s}
+Irá criar uma animação quando você passar o mouse em cima do parágrafo
+
+text-indent: px;
+Vai ser o espaço de um novo parágrafo
+
+line-height:px,em
+Vai ser o espaço entre uma linha e outra
+
+z-index: ;
+quanto maior o número registrado, significará que aquela tag estará na frente de todas as outras tags, é útil para quando você tem mais de uma caixa de conteúdo em um lugar só.
+
+list-style-position: inside;
+
+irá colocar tudo que for uma lista dentro do bloco selencionado, ou seja, se ul/ol estiver dentro de um main, ou article só configurar:
+article>ul{
+    list-style-position: inside;
+}
+
+Para dividir em duas colunas, basta por: 
+columns: 2;
+
+Para colocar um emoji customizado, basta utilizar o comando:
+list-style-type:"\código";
+Barra invertida
+Para colocar mais de um emoji customizado logo em seguida, basta por o list-style-type:"\código\código"
+
+position:relative
+Ele irá mover o conteúdo com base de onde ele foi criado, ou seja, se ele foi criado dentro de uma tag que foi centralizada, ele irá se mover a partir do meio da tela. 
+Pode-se usar as quatro posições, ou seja:
+top,left,right,bottom
+Utilize números negativos para dar o efeito contrário.
+
+Caso tenha uma outra tag com a position:relative, logo em cima da tag anterior,Também com position:relative, A segunda tag irá estar por cima da primeira.Caso tenha uma terceira, ela estará acima de todas as outras.
+
+position:absolute
+O position absolute, utiliza a tela como base para o seu movimento
+Ao utilizar o absolute, Todo o conteúdo dentro do absolute é movido para atrás do conteúdo original.
+Dentro do absolute, você pode utilizar as quatro posições:
+top,left,right,bottom.
+Você pode colocar direto a posição+valor referente a tela, independente se ele estiver dentro de um conteúdo ou não, ele sempre irá levar a tela como base.
+
+Para fazer com que o conteúdo se mova com base a uma tag específica, você deve modificar essa tag, com uma posição diferente de static(parado)(padrão)
+ou seja, pode ser o absolute ou relative

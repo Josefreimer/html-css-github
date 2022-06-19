@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+    .um{background-color:rgba(255, 0, 0, 0.229)}
+    a.um,a.um:visited{
+        color:red;
+    text-decoration: none;
+    }
+    a.um::before{content:'link '}
+    a.um::after{
+        content:' link ';
+        text-decoration: none;
+        font-weight: normal;
+        color:rgb(152, 27, 27)
+    }a.um:active::after{color:yellow;
+    background-color:darkred}
+    a.um:active{
+        color:yellow
+    }
+   
+</style>
+</head>
+<body>
+    <a href="https://www.youtube.com/playlist?list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n" class="um">texto</a>
+</body>
+</html>

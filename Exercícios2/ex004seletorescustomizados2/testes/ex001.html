@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .teste1 {
+            color: green;
+            background-color: rgba(168, 163, 163, 0.3);
+            font-weight: bold;
+            width: 400px;
+        }
+
+        .teste2 {
+            color: blue;
+            background-color: rgba(128, 0, 128, 0.185);
+            text-align: center;
+            width: 400px;
+
+        }
+
+        div:hover {
+            background-color: blue;
+        }
+
+        div{  
+            background-color: rgba(128, 128, 128, 0.454);
+            border: 1px solid;
+            text-align: center;
+            width: 350px;
+            display:inline-block;
+      }
+      div#pseudo{
+        border:2px solid;
+      }
+      div#pseudo:hover{
+          background-color:sandybrown;
+          color:red;
+          height:130px;
+      }
+      div#pseudo > p{
+          display:none ;
+      }
+      div#pseudo:hover > p{
+        display:block;
+        color:black;
+        background-color:burlywood;
+        font-weight:lighter;
+        text-align:center;
+        height:100px;
+      }
+div#divqua{
+    background-color:violet;
+    width:300px;
+    border:solid 2px;
+    
+}
+div#divqua:hover{
+    color:white;
+}
+</style>
+</head>
+
+<body>
+
+    <h1 class="teste1">
+        Teste 01
+    </h1>
+    <h1 class="teste2">
+        teste 02
+    </h1>
+    <p class="teste1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, et eum delectus repellat fugit
+        laborum! Totam saepe perferendis, odio veritatis exercitationem ex ea officia officiis iste temporibus error
+        placeat optio.</p>
+    <br>
+    <p class="teste2"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis fuga doloremque id eveniet
+        fugiat aliquam eligendi cupiditate omnis. Sapiente architecto voluptas ullam magni delectus consequatur harum
+        nemo excepturi dicta facilis.</p>
+
+    <div id="divum">
+        1
+    </div>
+    <div id="divdois">2</div>
+    <div id="pseudo">
+        Teste
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur inventore adipisci accusantium rem ea impedit fugiat, asperiores dolorem quos exercitationem omnis, minima deleniti eaque veritatis dolor optio voluptatibus explicabo sit.</p>
+    </div>
+    <div id="divqua">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum ipsa unde quod corporis odit omnis libero? Deleniti nulla culpa tempore soluta aspernatur, ipsum ut, ex velit architecto obcaecati dignissimos voluptates?</div>
+</body>
+
+</html>
