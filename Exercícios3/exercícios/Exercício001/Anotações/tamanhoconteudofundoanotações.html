@@ -1,0 +1,30 @@
+Você pode ver o exercício de exemplo na página:
+<a href="../tamanhoconteúdofundo.html"></a>
+
+Para que a imagem que você colocou no fundo da tela, continuar a rolar junto com o conteúdo, você deve criar um vínculo, que em inglês é attachment.
+Para conseguir essa função, você pode utilizar o comando dentro de body:
+
+background-attachment:scroll; <!-- Forma padrão -->
+O fundo irá rolar junto com o conteúdo, porém a imagem vai continuar fixa.
+
+E o background-attachment:fixed;
+Esse comando irá fazer com que a imagem de fundo acompanhe o conteúdo que você colocou
+
+<strong>Dica, ao combinar o background-size:cover com o background-attachment:fixed, o fundo irá ficar com a imagem preenchendo totalmente a tela, e irá acompanhar o conteúdo </strong>
+
+<strong>É possível misturar tanto o conteúdo da parte 1 dessas anotações junto com a parte dois, utilizando uma shorthand que é:</strong>
+<!-- Color image position repeat size attachment -->
+Juntando tudo exatamente nessa ordem fica:
+background:color image position {size} repeat attachment;
+ou
+<!-- background:gray url('url do site') center center cover no-repeat fixed;-->
+
+<strong>O cover(cobrir) que é o size, pode não funcionar nos navegadores dentro da shorthand, porém a ordem ainda deve ser seguida desse jeito, pois, no site oficial, essa é a ordem.
+    Para fazer com que a shorthand funcione junto com o tamanho da imagem de fundo, basta você fazer todo o processo:
+    color image position repeat size attachment e tirar apenas o size, colocando ele fora da tag, ou seja:
+    
+    body{
+        color(gray) image(url('caminho da imagem')) position(center center) repeat(no-repeat) attachment(fixed);
+        background-size:cover;
+
+</strong>

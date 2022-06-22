@@ -1,0 +1,24 @@
+Para centralizar um conteúdo de uma maneira rápida e fácil, só utilize o comando:
+margin:auto;
+Porém ele só funciona para linhas horizontais -
+
+Para alinhar verticalmente, você não pode colocaro margin:auto, pois, ele só serve horizontalmente, e para verticalmente você pode colocar o comando:
+position:relative<!-- Conteúdo pai -->
+position:absolute<!-- Conteúdo filho -->
+
+Ao você adicionar o position:absolute no filho, você pode adicionar mais duas propriedades, que são:
+left: px;
+top: px;
+
+Por você ter colocado absolute, ele irá se basear no corpo todo em si, porém como você colocou relative no pai, e o filho está dentro do pai, ele passa a se basear no pai 
+
+Caso você queira colocar o conteúdo exatamente no meio do conteúdo pai, você pode colocar o valor em porcentagem, ou seja:
+left:50%;
+top:50%;
+Porém, você vai perceber que visualmente, ele passou da metade, porém não é bem isso, é que ele pega a ponta do topo da esquerda como referência, ou seja, aquele topo esquerdo está exatamente no meio, e todo o resto do conteúdo está acompanhando.
+
+Caso você queria que ele fique exatamente no centro mesmo sabendo disso tudo, você deve fazer uma transformação, Para isso, utilize o comando:
+transform:translate(px, px)
+
+Valores positivos o primeiro mexe para a direta e o segundo para baixo
+Valores negativos o primeiro mexe para a esquerda e o segundo para cima
