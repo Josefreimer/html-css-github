@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+*{
+  font-size:3vh;
+}
+#caixadentrodaimagemum{
+    width:50%;
+   font-size:5vh;
+    color:white;
+    background-color:rgba(0, 0, 0, 0.368);
+    padding:10px;
+}
+#primeiraimagem{
+    height:60vh;
+    background-image: url('https://professorguanabara.github.io/projeto-cordel/imagens/background001.jpg');
+    background-size:cover;
+    
+}
+#segundaimagem{
+    background-image:url('https://professorguanabara.github.io/projeto-cordel/imagens/background002.jpg');
+    height: 60vh;
+    position:relative;
+
+}
+div#textosegundaimagem{
+    background-color:rgba(0, 0, 0, 0.414);
+    color:white;
+    font-size:3vh;
+    line-height:normal;
+    height:60%;
+    width:50%;
+    position:absolute;
+    top:5%;
+    left:3%;
+}
+footer{
+    background-color:black;
+    text-align:center;
+    color:white;
+    padding-top:1px;
+    font-size:16px;
+    font-weight:normal;
+    padding-bottom:1px;
+    margin-left:-20px;
+    width:97vw;
+}
+footer a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+   
+}
