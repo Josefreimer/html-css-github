@@ -1,52 +1,107 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+/* font-family: 'Kaushan Script', cursive;*/
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+/* font-family: 'Passion One', cursive; */
+:root{
+    --fonte1:'Verdana, Geneva, Tahoma, sans-serif';
+    --fonte2:'Passion One', cursive; 
+    --fonte3:'Kaushan Script', cursive;
+}
 
 *{
-  font-size:3vh;
+    margin:0px;
+    padding:0px;
+    font-size:1em;
 }
-#caixadentrodaimagemum{
-    width:50%;
-   font-size:5vh;
-    color:white;
-    background-color:rgba(0, 0, 0, 0.368);
-    padding:10px;
-}
-#primeiraimagem{
-    height:60vh;
-    background-image: url('https://professorguanabara.github.io/projeto-cordel/imagens/background001.jpg');
-    background-size:cover;
+html, body{
     
+    min-height:100vh;
+    color:black;
+    font-family:var(--fonte1);
 }
-#segundaimagem{
-    background-image:url('https://professorguanabara.github.io/projeto-cordel/imagens/background002.jpg');
-    height: 60vh;
-    position:relative;
+
+header{
+    background-color:black;
+    color:white;
+    text-align:center;   
+    font-variant:small-caps; 
+  
+}
+header > h1{
+    font-size:10vw;
+    padding-top:50px;    
+    font-family:var(--fonte2)
+}
+header>a{
+
+    text-decoration:none;
+    font-weight:bolder;
+    color:white;
+}
+header>a:hover{
+    text-decoration:underline;
 
 }
-div#textosegundaimagem{
-    background-color:rgba(0, 0, 0, 0.414);
-    color:white;
-    font-size:3vh;
-    line-height:normal;
-    height:60%;
-    width:50%;
-    position:absolute;
-    top:5%;
-    left:3%;
+section{
+    font-family:var(--fonte3);
+    padding-top:10vw;
+    padding-bottom:10vw;
+    font-size:3.5vw;
+    padding-left: 30px;
 }
+section > p{
+    line-height:2em;
+    }
+
+section.normal{
+background-color:white;
+color:black;
+padding-bottom:10vw;
+}
+section.normal>p{
+    padding-bottom:5vw;
+}
+
+section.image{
+background-color:black;
+color:white;
+padding-bottom:10vw;
+background-attachment: fixed;
+box-shadow:inset 10px 10px 10px  rgba(0, 0, 0, 0.319);
+}
+.image > p{
+    width:50vw;
+    background-color:rgba(0, 0, 0, 0.342);
+
+}
+#img1{
+background-image: url(./imagens/background001.jpg);
+background-size:cover;
+background-position:right center;
+}
+#img2{
+background-image: url(./imagens/background002.jpg);
+background-size:cover;
+background-position:right;
+background-attachment: fixed;
+
+}
+
 footer{
-    background-color:black;
-    text-align:center;
-    color:white;
-    padding-top:1px;
-    font-size:16px;
-    font-weight:normal;
-    padding-bottom:1px;
-    margin-left:-20px;
-    width:97vw;
+ text-align:center;
+ background-color:black;
+ color:white;   
 }
 footer a{
-    color:white;
     text-decoration:none;
-    font-weight:bold;
-   
+    color:white;
+    
+}
+a:after{
+    content:' 🔗'
+}
+a:hover{
+    text-decoration: underline;
 }
