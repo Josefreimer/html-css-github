@@ -8,3 +8,18 @@ Para Colocar todas as letras de uma determinada parte do texto, ou o próprio te
 text-transform:uppercase;
 
 h1{font-size:10vw} significa que todo o título, irá ficar com 10% do tamanho da largura da tela, o que conforme a tela mude de tamanho, a letra gradualmente irá mudar de tamanho também.
+
+Para criar o efeito "paralax" primeiro você deve saber o que ele é:
+Bem simples,ele é apenas um efeito de uma imagem que, ao rolar a tela, a imagem fica "se mexendo" e quanto mais você rola a tela para baixo/cima, ela vai acompanhando.
+Agora, para criar esse efeito, primeiramente você deve entender que a imagem não está se movendo, e sim você que está, a imagem está totalemente parada, ou em outras palavras"Fixada" na tela, e bem, acho que com isso, você ja entendeu né?
+
+background-attachment:fixed;
+background-size:cover;
+background-position:center center;
+
+<a href="Exercícios3exercícios\Exercício001\Anotações">
+    Siga esse caminho relativo que irá encontrar as anotações do fundo da imagem, não se preocupe em ler elas, você as anotou para caso um dia esqueça.
+</a>
+
+Para por uma sombra para dentro, você pode utilizar o comando inset, ou seja:
+box-shadow: inset 1px 1px 0px 1px black

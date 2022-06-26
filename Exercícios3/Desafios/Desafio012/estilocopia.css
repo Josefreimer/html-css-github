@@ -18,7 +18,7 @@ hmtl,body{
 background-color:darkgray;
 min-height:100vh;
 font-family: var(--fonte1);
-background-color:gray;
+
 
 }
 header{
@@ -56,22 +56,38 @@ padding-top:10vh; /* baixo */
 padding-bottom:10vh;/* Com esses dois comandos, irá fazer com que a section fique grande o suficiente para que em uma tela de computador, caiba apenas duas sections, e na de um celular, caiba apenas uma section */
 line-height:2em;/* Cria um espaçamento entre as linhas */
 padding-left:30px;
+
 }
 
 
 section.normal{
-    background-color: white;
-    color:black;
+ background-color: white;     color:black;
+}
+section.normal > p{
+    padding-bottom:5vh;
 }
 section.imagem{
     background-color:rgb(51,51,51);
     color:white;
+    background-size:cover;
+    background-position:right;
 }
 section.imagem > p/* modifica todo o parágrafo dentro da section com class="image" */{
     background-color:rgba(0, 0, 0, 0.253);
     display:inline-block;/* irá fazer com que a imagem fique na mesma linha do conteúdo, ou seja, a imagem irá se adaptar ao tamanho do conteúdo */
     padding:5px;
+
     
+}
+section#img1{
+background-image:url(./imagens/background001.jpg);
+background-attachment: fixed;
+}
+section#img2{
+background-image:url(./imagens/background002.jpg);
+background-attachment:fixed;
+text-shadow: inset 2px 1px 1px 0px rgba(0, 0, 0, 0.439);
+box-shadow:inset 6px 6px 13px 0px rgba(0, 0, 0, 0.41);
 }
 
 footer{
