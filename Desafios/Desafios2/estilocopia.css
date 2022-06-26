@@ -150,12 +150,12 @@ article>img.pequeno{
 
 article img{
     width:100%;
+    display:block;
     margin:auto;
 }
 
 .video{
    background-color: gray;
-
    padding-top:10%;
    padding-bottom:50%;
    /*padding-bottom:55%; */
