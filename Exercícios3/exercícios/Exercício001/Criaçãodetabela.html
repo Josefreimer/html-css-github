@@ -5,50 +5,217 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        table{
-            border-collapse: collapse;/* irá juntar todas as bordas entre si */
-            
-        }
-        thead, tbody, tfoot{
-            height:200px;
-            width:200px;
-        }
-        td{
-            text-align:center;
-            border:1px solid red;
-            padding:10px;
-        }
-    </style>
+<style>
+    table{
+        border-collapse: collapse;
+    }
+    td{
+        border:1px solid rebeccapurple;
+        width:40px;
+        height:40px;
+        text-align:center;
+        vertical-align:middle;
+    }
+    caption{
+        border:1px solid black;
+        background-color: gray;
+        color:white;
+        font-weight:bold;
+        font-size:1.1em;
+        font-family:Arial, Helvetica, sans-serif;
+    }
+    tbody>tr:nth-child(2n-1){
+background-color:gray;
+    }
+    thead{
+        background-color:cadetblue;
+    }
+    th{
+        font-size:1.1em;
+        font-weight:normal;
+        border:1px solid red;
+        padding:10px;
+    }
+</style>
 </head>
 <body>
     <table>
-        <thead>
+        <caption>
+            Sequência de números.
+        </caption>
+    <thead>         
             <tr>
+                <th>Cabeça</th>
                 <td>1.1</td>
                 <td>2.1</td>
                 <td>3.1</td>
                 <td>4.1</td>
+                <td>5.1</td>
+                <td>6.1 </td>
+                <td>7.1 </td>
+                <td>8.1 </td>
+                <td>9.1 </td>
+                <td>10.1 </td>
+                <td>11.1 </td>
+                <td>12.1 </td>
+                <td>13.1</td>
+                <td>14.1 </td>
+                <td>15.1 </td>
             </tr>
+    
         </thead>
+<tbody>
 
-        <tbody>
-            <tr>
-                <td>1.2</td>
-                <td>2.2</td>
-                <td>3.2</td>
-                <td>4.2</td>
-            </tr>
-        </tbody>
+                <tr>
+                    <th>Fila 3</th>
+                    <td>1.2</td>
+                    <td>2.2</td>
+                    <td>3.2</td>
+                    <td>4.2</td>
+                    <td>5.2</td>
+                    <td>6.2</td>
+                    <td>7.2</td>
+                    <td>8.2</td>
+                    <td>9.2</td>
+                    <td>10.2</td>
+                    <td>11.2</td>
+                    <td>12.2</td>
+                    <td>13.2</td>
+                    <td>14.2</td>
+                    <td>15.2</td>
+                </tr>
+                <tr>
+                    <th>Fila 4</th>
+                   <td>1.2</td>
+                    <td>2.2</td>
+                    <td>3.2</td>
+                    <td>4.2</td>
+                    <td>5.2</td>
+                    <td>6.2</td>
+                    <td>7.2</td>
+                    <td>8.2</td>
+                    <td>9.2</td>
+                    <td>10.2</td>
+                    <td>11.2</td>
+                    <td>12.2</td>
+                    <td>13.2</td>
+                    <td>14.2</td>
+                    <td>15.2</td>
+                    
+                </tr>
+                <tr>
+                    <th>Fila 5</th>
+                    <td>1.2</td>
+                    <td>2.2</td>
+                    <td>3.2</td>
+                    <td>4.2</td>
+                    <td>5.2</td>
+                    <td>6.2</td>
+                    <td>7.2</td>
+                    <td>8.2</td>
+                    <td>9.2</td>
+                    <td>10.2</td>
+                    <td>11.2</td>
+                    <td>12.2</td>
+                    <td>13.2</td>
+                    <td>14.2</td>
+                    <td>15.2</td>
+                </tr>
+                <tr>
+                    <th>Fila 6</th>
+                    <td>1.2</td>
+                    <td>2.2</td>
+                    <td>3.2</td>
+                    <td>4.2</td>
+                    <td>5.2</td>
+                    <td>6.2</td>
+                    <td>7.2</td>
+                    <td>8.2</td>
+                    <td>9.2</td>
+                    <td>10.2</td>
+                    <td>11.2</td>
+                    <td>12.2</td>
+                    <td>13.2</td>
+                    <td>14.2</td>
+                    <td>15.2</td>
+                </tr>
+                <tr>
+                    <th>Fila 8</th>
+                    <td>1.2</td>
+                    <td>2.2</td>
+                    <td>3.2</td>
+                    <td>4.2</td>
+                    <td>5.2</td>
+                    <td>6.2</td>
+                    <td>7.2</td>
+                    <td>8.2</td>
+                    <td>9.2</td>
+                    <td>10.2</td>
+                    <td>11.2</td>
+                    <td>12.2</td>
+                    <td>13.2</td>
+                    <td>14.2</td>
+                    <td>15.2</td>
+                </tr>
+                <tr>
+                    <th>Fila 8</th>
+                    <td>1.2</td>
+                    <td>2.2</td>
+                    <td>3.2</td>
+                    <td>4.2</td>
+                    <td>5.2</td>
+                    <td>6.2</td>
+                    <td>7.2</td>
+                    <td>8.2</td>
+                    <td>9.2</td>
+                    <td>10.2</td>
+                    <td>11.2</td>
+                    <td>12.2</td>
+                    <td>13.2</td>
+                    <td>14.2</td>
+                    <td>15.2</td>
+                </tr>
+                <tr>
+                    <th>Fila 9</th>
+                    <td>1.2</td>
+                    <td>2.2</td>
+                    <td>3.2</td>
+                    <td>4.2</td>
+                    <td>5.2</td>
+                    <td>6.2</td>
+                    <td>7.2</td>
+                    <td>8.2</td>
+                    <td>9.2</td>
+                    <td>10.2</td>
+                    <td>11.2</td>
+                    <td>12.2</td>
+                    <td>13.2</td>
+                    <td>14.2</td>
+                    <td>15.2</td>
+                </tr>
 
-        <tfoot>
-            <tr>
-                <td>1.3</td>
-                <td>2.3</td>
-                <td>3.3</td>
-                <td>3.4</td>
-            </tr>
-        </tfoot>
+</tbody>
+
+            <tfoot>
+                <tr>
+                    <th>PÉ</th>
+                    <td>1.3</td>
+                    <td>2.3</td>
+                    <td>3.3</td>
+                    <td>4.3</td>
+                    <td>5.3</td>
+                    <td>6.3 </td>
+                    <td>7.3 </td>
+                    <td>8.3 </td>
+                    <td>9.3 </td>
+                    <td>10.3 </td>
+                    <td>11.3 </td>
+                    <td>12.3 </td>
+                    <td>13.3 </td>
+                    <td>14.3 </td>
+                    <td>15.3 </td>
+                </tr>
+            </tfoot>
     </table>
 </body>
 </html>

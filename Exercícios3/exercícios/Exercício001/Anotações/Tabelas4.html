@@ -1,0 +1,50 @@
+<a href="Tabelas1.html">Básico</a>
+<a href="Tabelas2.html">Alinhamento</a>
+<a href="Tabelas3.html">Hierarquia</a>
+<a href="Tabelas4.html">Efeito zebrado</a>
+
+Para começar, o efeito zebrado, nada mais é que a alternância de uma cor para outra, ou seja, um sim outro não.
+
+Para que você consiga fazer, isso, você primeiro precisa saber o que quer alterar, se é cada dado, ou se é a fila inteira. 
+Se for os dados, altere no style.
+td{}
+Se for linha
+tr{}
+Se for título
+th{}
+
+O comando necessário para criar esse efeito é uma pseudoclass, ou seja:
+
+Caso você queira as <strong>linhas</strong> do <strong>corpo</strong>, você deve utilizar:
+
+tbody>tr:nth-child(2n){
+    background-color:cor
+}
+
+Esse comando, irá criar uma alternância a cada duas linhas, por isso o 2n
+
+ou seja, Vamos dizer que a tabela terá uma cor padrão como white, e eu utilizo esse comando com a cor gray+2n, 
+isso irá fazer com que a tabela fique uma linha branca e a segunda linha cinza 
+
+Se eu trocar o 2n para 3n, irá fazer com que fique duas linhas brancas e uma cinza.
+
+outro jeito de fazer o jeito zebrado, pode ser trocando o 2n por "odd" que significa ímpar
+ou seja
+tbody>tr:nth-child(odd)
+ou seja, a primeira linha vai ficar cinza, a segunda branca a terceira cinza...
+
+Para fazer com que seja par troque o 2n por even, ou seja:
+tbody>tr:nth-child(even), ou seja:
+branco, cinza, branco,cinza
+
+Você pode alterar as cores em si, para que fique por exemplo:ciano verde
+Basta colocar dois nth-child(), ou seja:
+
+tbody>tr:nth-child(odd){
+background-color:aqua;
+}
+tbody>tr:nth-child(even){
+    background-color:green;
+}
+
+Você pode colocar também o n2-1 caso você queira que comece na primeira

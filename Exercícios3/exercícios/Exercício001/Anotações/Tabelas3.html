@@ -5,15 +5,17 @@
 <a href="Tabelas2.html">Alinhamento</a>
 
 Dentro da tabela, já sabemos que existe uma hierarquia, cujo ja foi aprendido sobre:
-<table>
-    <tr>
-        <td>
+<table><!-- Comando base -->
+    <th><!-- Título da coluna -->
+    <tr><!-- Linhas da tabela -->
+        <td><!--Dados da tabela  --> 
 
-        </td>
-    </tr>
-</table>
+        </td><!-- Dados da tabela -->
+    </tr><!-- Linha da tabela -->
+</table><!-- Comando Base -->
 Onde table é a base para criar, tr é a linha da tabela, e td são os dados.
 Porém além delas existe o corpo da tabela, ou seja:
+caption<!-- Legenda da tabela -->
 thead<!-- cabeça da tabela -->
 tbody<!--Corpo da tabela -->
 tfoot<!-- Rodapé da tabela -->
@@ -22,6 +24,7 @@ Dentro de cada um deles pode ter tr td th
 
 Juntando tudo irá ficar:
 <table><!-- Base -->
+    <caption> </caption><!--Legenda(Sempre irá ficar em cima)  -->
     <thead><!-- Cabeça -->
         <tr><!-- linha -->
             <td><!-- dado -->
@@ -46,3 +49,25 @@ Juntando tudo irá ficar:
 
     </tfoot>
 </table>
+
+<strong>
+    O comando "<th>" pode ser facilmente confudido com o "<td>", porém, lembre-se que o th é o título de todo o conteúdo que irá estar logo em seguida.
+</strong>
+
+
+
+Ao utilizar o th, você pode definir a coluna dele, Para fazer isso basta você colocar o seguinte comando em seguida do th dentro da tag:
+
+<th scope="col">Coluna"|"</th>
+
+Porém, Pode ser que os dados não estejam na mesma coluna, e sim na mesma linha, e para definir um título da mesma linha, basta utilizar o comando:
+<th scope="row">Linha"-"</th>
+
+Ambos o scope="rol" e scope="col", não irão causar um efeito visual, mas sim semântico, ele ajuda o google a definir o que é aquele código.
+
+<strong>
+    Quando você altera a largura/altura da tabela para por exemplo:100px;<!-- número aleatório -->
+    E logo em seguida, altera um th ou td, para por exemplo:30px;
+    A tabela que antes era 100px, irá ficar 70px, e o td ou th, irá ser 30px que foi o comando feito.
+    Isso se deve ao fato de que visualmente, a tabela não irá mudar.
+</strong>
