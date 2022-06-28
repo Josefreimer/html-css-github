@@ -1,0 +1,118 @@
+<strong>Como criar a sua primeira tabela(Comandos basicos)</strong>
+
+
+
+A criação de tabelas, pode ser útil para você conseguir representar muitas informações com uma boa 
+organização.
+
+Para criar as tabelas, você precisa primeiro seguir e respeitar uma hierarquia, onde:
+table=Tabela
+table row=Linha da Tabela
+table header= Cabeçalho de Tabela
+table data=Dados da tabela.
+onde um vai ficar dentro do outro.
+
+Para criar um table rowLinha de tabela você deve utilizar o comando:
+<table>
+<!-- Table row --> <tr><!--Primeira linha da tabela -->
+
+                    </tr>
+</table>
+
+Para criar uma tabela de dados<!-- table data --> Você deve utilizar o comando:
+<table>
+    <tr><!-- Linha -->
+        <!--table data--><td><!-- Dados da tabela -->
+            dado 1</td>
+        <td>Dado 2</td>
+        <td>dado 3</td>
+    </tr>
+</table>
+Cada tr<!-- table row --> é um block-level, ou seja, não precisa de um break line para colocar uma informação em baixo da outra, tudo que precisa é apenas criar um novo table row<!-- tr --> e colocar os table data<!-- td -->
+<table>
+    <tr>
+        <td>1</td>
+        <td>2</td>
+    </tr>
+    <tr>
+        <td>1.2</td>
+        <td>2.2</td>
+    </tr>
+</table>
+
+Porém, Apenas com esses três comandos <!-- table, tr,td --> você criou apenas informações, e não tem uma estrutura de uma tabela, não tem as bordas, Para criar as bordas, você deve modificar la nos estilos, com o comando border: px solid cor<!-- já aprendido -->
+Porém não crie usando o "table", já que o table é o pai de todos eles, e assim, irá criar uma borda em volta de tudo, ao invés de criar uma borda em volta de cada conteúdo.
+Para criar uma borda em volta de cada conteúdo, você pode/deve configurar  os table data <!-- dt -->, ou seja:
+<style>
+    td{
+        border:1px solid black;
+    }
+</style>
+e pronto, para cada dado da sua tabela, uma nova borda será criada.
+
+Caso você queira por um espaço maior em cada dado, você pode modificar não somente a borda mas o width, ou seja:
+
+<style>
+    td{
+        border:1px solid black;
+        width: 200px;
+        background-color:aqua;
+    }
+</style>
+
+
+Caso você queria afastar as letras da borda, você pode utilizar o padding:
+<style>
+    td{
+        border:1px solid black;
+        padding:2px/* altura */ 8px/* Largura */
+        /* ou */
+        /* padding-top:2px;
+           padding-bottom:2px;
+           padding-right:2px;
+           padding-left:2px; */
+    }
+</style>
+
+Após todos esses comandos, você verá que irá ter um espaço entre as bordas dos dados, e isso é normal, pois, é o padrão do html:5, que é feito por causa do comando:
+border-collapse:separate;
+
+<strong>
+Para juntar as bordas entre si e por fim formar uma tabela muito mais parecida como uma tabela normal<!-- Excel por exemplo -->, você deve alterar o "separate" para collapse, ou seja, irá ficar:
+<style>
+table{
+    border-collapse:collapse;
+}
+</style>
+</strong>
+
+Caso você queria mudar a cor de fundo de todas as linhas, você pode alterar o tr para a cor que você desejar
+<style>
+    tr{
+        background-color:red;
+    }
+</style>
+Porém, isso irá alterar a tabela toda, o que pode ser substitúido por não o tr, mas sim a própria "table", e para configurar apenas uma linha, você pode modificar com id ou class, ou seja
+
+<html>
+    <table>
+        <tr>
+            <td id="um">1</td>
+            <td id="dois">2</td>
+            <td id="tres">3</td>
+        </tr>
+    </table>
+</html>
+<style>
+    tr#um{
+        background:blue;
+    }
+    tr#dois{
+        background-color:red;
+    }
+    tr#tres{
+        background-image: linear-gradient(to left, red, blue, transparent);
+    }
+</style>
+
+Caso você queria alterar, não uma linha toda, mas sim somente um dado em específico, você pode fazer o mesmo processo, onde altera apenas o "tr<!-- table row -->"por o "td<!-- Table data -->"
