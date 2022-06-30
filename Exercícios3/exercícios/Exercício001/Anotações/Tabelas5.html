@@ -1,0 +1,22 @@
+Para fixar o título na sua tela, você precisa adicionar alguns comandos:
+Primeiro, você deve colocar dentro de table, o comando:position:relative
+Após isso, Como você quer fixar o título da tabela<!-- th -->, você deve utilizar o seguinte caminho:
+table>tr>th{
+
+}
+Dentro desse caminho, você deve adicionar um position:sticky<!-- Grudar -->, onde esse comando ele irá fixar em alguma parte da tela, essa parte será colocada em apeanas número por exemplo:
+
+thead>tr>th{
+position:sticky;
+top:0;
+}
+Após tudo isso, ele irá colar apenas as letras, para trazer a cor de fundo junto basta você adicionar no mesmo comando o background-color:
+ou seja
+
+thead>tr>th{
+    position:sticky;
+    top:-1px;
+    background-color:gray;
+}
+
+Esse comando, automaticamente, irá sumir ao chegar no final da tabela sozinho, o que é extremamente útil em situações onde você tem um texto logo abaixo da tabela e você queria ler mas não conseguia.
