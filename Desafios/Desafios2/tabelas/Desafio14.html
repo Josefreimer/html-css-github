@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+
+        }
+        table{
+            border-collapse:collapse;
+        }
+        td,th{
+            border:1px solid black;
+            padding:10px;
+            color:white;
+            text-align:center;
+            vertical-align:middle;
+        }
+        td{
+            background-color:white;
+            color:rgb(0, 0, 0);
+            font-weight:bold;
+        }
+        th{
+            background-color:rgb(121, 120, 120);
+            font-weight:bold;
+            font-size:1.1em;
+        
+
+        }
+        .Diciplina{
+           width:200px;
+           text-align:left;
+        }
+        .Médiaespeciais{
+            background-color:rgb(121, 120, 120);
+            color:white;
+        }
+     .divisão{
+        background-color:white;
+        color:black;
+
+     }
+        table{
+            width:80vw;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <th rowspan="2">Área</th>
+            <th rowspan="2">Diciplinas</th>
+            <th  colspan="2">Notas</th>
+            <th rowspan="2">Média</th>
+            <tr>
+                <th>Nota 1</th>
+                <th>Nota 2</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <th rowspan="4" class="divisão">Exatas</th>
+            <td class="Diciplina">Matemática</td>
+            <td>0,0</td>
+            <td>0,0</td>
+            <td>0,0</td>
+            <tr>
+                <td class="Diciplina">Física</td>
+                <td>0,0</td>
+                <td>0,0</td>
+                <td>0,0</td>
+            </tr>
+            <tr>
+                <td class="Diciplina">Química</td>
+                <td>0,0</td>
+                <td>0,0</td>
+                <td>0,0</td>               
+            </tr>
+            <tr>
+                <td class="Diciplina">Biologia</td>
+                <td>0,0</td>
+                <td>0,0</td>
+                <td>0,0</td>
+            </tr>
+            <tr>
+                <th colspan="4" class="Diciplina">Média de Exatas</th>
+                <td class="Médiaespeciais">0,0</td>
+            </tr>
+            <tr>
+                <th rowspan="2" class="divisão">Humanas</th>
+                <td>História</td>
+                <td>0,0</td>
+                <td>0,0</td>
+                <td>0,0</td>
+            </tr>
+            <td>Geografia</td>
+            <td>0,0</td>
+            <td>0,0</td>
+            <td>0,0</td>
+            <tr>
+                <th colspan=4 class="Diciplina">Média de humanas</th>
+                <td class="Médiaespeciais">0,0</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

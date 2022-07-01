@@ -1,0 +1,19 @@
+Os escopes servem para você indicar ao seu navegador o que são linhas ou colunas, ou grupo de linhas e de colunas.
+Os escopes não causam nenhum efeito visual, porém como dito anteriormente, eles servem para ajudar o seu navegador.
+
+Para utilizar os escopes dentro da tabela, você pode colocar dentro de th, td, o comando:
+
+<th scope="col"><!-- Vai indicar que é uma coluna -->
+<th scope="row"><!-- Vai indicar que é uma linha-->
+
+
+Temos também os grupos dos scopes, que servem para quando você mescla uma célula utilizando o comando: colspan ou row span.
+<th rowspan="2"></th>
+<th colspan="2"></th>
+
+Eles vão servir para aumentar o tamanho da célula para ficarem iguais aos das próximas celulas.
+Lembrando que ele sempre conta com ele mesmo e depois com o próximo, ou seja, para aumentar ele, o mínimo que precisa é o 2, pois, o 1 é ele mesmo.
+Caso você tenha colocado 2ou mais e ele não tenha aumentado de tamanho, deve ser por que você ainda não colocou as outras células coerentes com o seu span
+
+Sabendo do que é o span e o scope, fica facil entender o scope group, pois, ele nada mais é que indicando ao seu navegador que aquela linha/coluna esta ocupando um span de 2 ou mais, ou seja:
+<th scope="colgroup"></th> 
