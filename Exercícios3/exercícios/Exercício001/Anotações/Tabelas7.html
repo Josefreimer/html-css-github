@@ -1,0 +1,19 @@
+Para modificar uma linha, você pode ir no style e apenas modificar o tr, mas para modificar uma coluna inteira:
+
+Para uma configuração mais rápida de uma coluna você pode modificar uma coluna inteira de uma tabela ao invés de dado por dado<!-- td -->, Para fazer isso, você precisa seguir alguns critérios:
+
+Você não pode customizar os itens antes.
+Caso você modifique, o comando não irá funcionar.
+
+Para fazer esse efeito, você deve utilizar o comando dentro de table
+
+<colgroup>
+    <col id="nome da id">
+</colgroup>
+Após isso, você precisa apenas modificar la no style.
+
+Para configurar vários grupos em seguida de uma só vez, você pode colocar um span, ou seja
+
+<colgroup>
+<col id="Nome do id" span="2"><!-- Quantidade de colunas que você quer -->
+</colgroup>
