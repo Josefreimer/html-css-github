@@ -1,0 +1,615 @@
+<strong>Começo anotações 1</strong>
+
+<!--Títulos1-->
+
+<h1></h1>
+h1;h6
+<!--níveis de 
+títulos-->
+<p></p>
+
+<!---->
+<!--Fim!!-->
+
+<!--Emojis/Símlos-->
+
+&
+<!--símbolo2-->
+
+&#x
+<!--emoji-->
+<!--Fim!!-->
+
+<!--Imagens3-->
+
+<img src="" alt="">
+<!--imagem-->
+<!--Fim!!-->
+
+<!--Favicon4-->
+
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<!--favicon-->
+<!--Fim!!-->
+
+<!--Formatações de texto7;8-->
+
+<b>frase</b>
+<!--negrito não semantico-->
+
+<strong>frase</strong>
+<!--negrito semântico-->
+
+<i>frase</i>
+<!--Itálico(não semântico-->
+
+<em>frase</em>
+<!--Itálico Semântico-->
+
+<mark>frase</mark>
+<!--deixa a frase marcada-->
+<mark style="background-color:color;"></mark>
+<!--deixa a frase marcada com a cor escolhida-->
+
+<big>frase</big>
+<!--deixa as letars grandes(não encontrado forma semântica)-->
+
+<small>frase</small>
+<!--deixa as frases com letras pequenas-->
+
+<del>frase</del>
+<!--Deixa a frase com um corte no meio-->
+
+<ins>frase</ins>
+<!--Deixa a frase sublinhada(semântico)-->
+
+<u>frase</u>
+<!--Deixa a frase sublinhada(não semântico)-->
+
+<sup>frase</sup>
+<!--Coloca uma palavra em cima da outra(H20)-->
+
+<sub>frase</sub>
+<!--Coloca uma frase em baixo da outra-->
+
+<code>frase</code>
+<!--Deixa as palavras com todos os mesmos tamanhos, deixando assim mais facil de serem lidas(códigos)-->
+
+<q>frase</q>
+<!--citações simples-->
+
+<blockquote>frase</blockquote>
+<!--citações compostas-->
+<blockquote cite="local de onde tirou">frase</blockquote>
+<!--citação composta com o link de onde tirou tal citação-->
+
+<abbr title="descrição">abreviada</abbr>
+<!--Cria uma descrição para uma palavra abreviada-->
+
+<bdo dir="ltr;rtl">frase</bdo>
+<!--serve para reescrever a frase podendo ser ltr ou rtl-->
+<!-- Fim!!-->
+
+
+<!--Listas9-->
+<ol></ol>
+<!--lista organizada-->
+
+<ol type="1;A;a;I;i"></ol>
+<!--tipos de lista-->
+
+<ul type="disc;circle;square">
+<ul start="número">palavras</ul>
+
+<!--lista desorganizada-->
+
+<li>frase</li>
+<!--as frases que voce quer colocar dentro da lista-->
+
+<dl></dl>
+<!--Lista criada para explicar uma definição-->
+<!--Precisa desse comando para utilizar os dois próximos-->
+
+<dt>palavra</dt>
+<!--termo que será explicado-->
+
+<dd>frase</dd>
+<!--Frase que irá explicar o termo-->
+<!--Fim!!-->
+
+
+<!--Links10-->
+
+<a href="link">frase do link</a>
+<!--cria o acesso do link em uma frase específica-->
+
+<a href="link" target="_blank">frase</a>
+<!--ao clicar no link, irá criar uma nova página para mostrar o site do link-->
+
+<a href="link" target="_self">frase</a>
+<!--irá dizer ao site para permanecer na mesma página-->
+
+<a href="link"rel="external;next;previous;nofollow">frase</a>
+<!--Irá dizer ao navegador se o link irá ser para fora, próximo ou anterior, e para um link que não se sabe se é confiável-->
+
+<a href="./url">frase</a>
+<!--irá criar um link que permanecerá na mesma página-->
+
+<a href="../url">frase</a>
+<!--Irá criar um link que voltará na página do link-->
+
+<a href="link" download="pasta" type="aplication/pdf">frase</a>
+<!--irá criar um link para dowload da pasta que voce desejou com o tipo da pasta, nesse caso pdf-->
+<!--https://www.iana.org/assignments/media-types/media-types (outros tipos de type, nao seguem padrão)-->
+
+ex011:<a href="../ex011-imagens/anotaçõesimagens.html">imagens</a> 
+Utilize o comando img que irá gerar o <img src="" alt="">; 
+Dentro do src="" coloque a pasta que está a imagem;
+Dentro do alt="Coloque o que é a imagem, o que ela representa"
+Para mudar o tamanho da imagem ao decorrer do tamanho em px do aparelho, utilize o comando picture que irá gerar: <picture></picture>;
+Dentro desse comando, utilize a imagem base(recomendo que use a maior imagem como base) colocando o comanando <img src="pasta" alt="imagem base"> e dentro do picture em cima da tag img adicione um source:media:type que irá gerar: <source media="(min-width: )" srcset="" type="image/">
+Troque o min-width para max-widht, é algo que irá facilitar na hora de definir o tamanho da imagem, dentro do max-width: coloque um tamanho em px maximo que uma pessoa pode chegar para que a imagem saia da base e mude para essa nova que você adicionou
+e dentro do srcset="" adicione a pasta da segunda imagem, que pode ser qualquer uma. 
+Caso queria adicionar mais imagems com tamanhos diferentes, basta sempre ir adicionando source:media:type e colocando o tamnho maximo com a imagem, lembrando que a imagem base deve ser a maior imagem já que você utilizou o max-width, e conforme vai adicionando mais imagens, que coloque imagens cada vez menores
+Você pode utilizar os comandos:weight(altura) e witdh(largura) dentro do <img src="" alt=""> apos o alt: por exmplo:
+<img src="pasta" alt="teste" weight="200px" width="210px">
+o tipo da imagem pode ser classificados em:png,jpg,gif...
+background-image: url('pasta') <!--Irá acrescentar uma imagem de fundo para o seu site-->
+
+<a href="../ex011-imagens/anotaçõesaudio.html">ex011-imagens</a>
+Para adicionar audios em seu site,Basta adicionar o comando <audio>
+</audio> e dentro de audio adicione um source:src que vai gerar:
+<source src="" type="">
+Dentro do src=adicione a pasta do audio, dentro do type, adicione os tipos do audio que podem ser acessados pelo link <a href="https://www.iana.org/assignments/media-types/media-types.xhtml" target="_blank" rel="unfollow">:</a>
+Os tipos de audios são 
+mp3(mpeg)<!--utilize sempre que possível-->
+ogg(ogg)<!--utilize sempre que possível-->
+wav(wav)<!--Menos recomendavel, nao utilize-->
+que vai ficar:
+<audio>
+    <source src="pasta" type="audio/mpeg">
+</audio>
+<audio>
+    <source src="pasta" type="audio/ogg">
+</audio>
+<audio>
+    <source src="pasta" type="audio/wav">
+</audio>
+A ordem é importante, ou seja, o site vai tentar carregar o primeiro tipo que aparecer na frente<!--Tente deixar o mp3(mpeg) na frente, pois, ele é o tipo mais comum-->
+Para aparecer a opção de começar o audio e aumentar o volume... utiize  o comando dentro do <audio controls></audio>
+Para começar o audio toda vez que reinicia o site, dentro do <audio></audio> utilize o autoplay ou seja <audio autoplay></audio>
+para o audio ficar repetindo infinitamente utilize o loop dentro do video, ou seja, <video loop><source src="pasta" type="audio/mpeg,ogg,wav"></video>
+Para o audio carregar junto com o site utilize o comando dentro de preload que fica dentro do audio: auto, ou seja:
+<audio preload="auto"></audio>
+para ele carregar apenas informações como o tempo e a data que é o jeito mais recomendado, utilize dentro de preload o metadata, ou seja,
+<audio preload="metadata"></video>
+Para o audio carregar apenas quando a pessoa clicar em cima dele, utilize o none dentro do preolado
+ou seja:
+<audio preload="none"></audio>
+
+ex012:videos <a href="../ex012-videos/anotações.html">:</a>
+As compatibilidades de videos são:
+mp4v, webm e ogg. Tente colocar todos os tipos pois cada navegador usa um tipo
+Não coloque videos com resolução muito alta, ou acima de 1080p
+Para adicionar vídeos, utilize o comando: <video src="pasta"></video>
+Para adicionar os tipos de video citados anteriormente basta colocar o type dentro do source colocado após a primeira tag <video> por exemplo:
+<video>
+    <source src="pasta" type="video/mp4">
+    <source src="pasta" type="video/webm">
+    <source src="pasta" type="video/ogg">
+</video>
+temos também o video do tipo mp4v, porém se utiliza a tag mp4 igual do próprio mp4v
+Caso queria ajustar o tamanho do vídeo basta utilizar o weight/width dentro da tag <video> por exemplo:
+<video weight="200px" width="200px"><source src="pasta" type="ogg/webm/mp4"></video>
+Para adicionar a opção de começar o vídeo só utilizar o comando controls dentro do video por exemplo: 
+<video controls><source src="" type=""></video>
+Para adicionar uma capa para o seu vídeo só utilizar o poster dentro do <video> por exemplo:
+    <video poster="pasta da imagem "> <source src="" type="ogg,webm,mp4v"></video>
+Para deixar o vídeo mais leve para o seu site, você pode adicionar direto do youtube.
+Para adicionar vídeos do youtube, basta ir no próprio youtube, pesquisar o vídeo que você quer colocar, clicar na parte de comparilhamento, clicar em incorporar e dps clique apenas em copiar e colar. Não precisa colocar a tag <video>, basta apenas colar sem nada mesmo
+    
+
+
+
+
+    <strong>Começo anotações 2</strong>
+    
+
+    <a href="../ex013cssinline/anotações">cssinline</a>
+    Para mudar a cor do título, p, entre outros, basta utilizar o comando style=color:cor dentro da própria tag. por exmemplo:
+    <h1 style="color:black"></h1>
+    <p style="color:black"></p>
+    Para mudar a cor de fundo só usar o style="background-color:cor" por exemplo:
+    <p><mark style="background-color:yellow"></mark>texto</p>
+    Para mudar a font da sua letra, basta utilizar o comando style="font-family:ctrl+space" por exmplo:
+    <p style="font-family: Arial, Helvetica, sans-serif;"></p>
+    Para deixar o texto organizado use o comando text-align:justify;
+    por exemeplo:
+    <p style="text-align:justify"></p>
+    Para mudar o tamanho da letra  basta usar o font-size="tamanho em px" dentro da tag por exemplo:
+<h1 style="font-size:20px"></h1><!--16px é a base-->
+Para mudar a o tamanho da fonte em relação aos px basta usar o em por exemplo
+<style>
+h1{font-size:16px}
+</style>
+<h1 style="font-size:1.5em;"></h1>
+Para por o texto ou título... na direita, centro, esquera etc... use o comando text-align:direção
+por exemplo:
+<p style="text-align:center"></p>
+<p style="text-align:right"></p>
+<p style="text-align:left"></p>
+Para criar uma linha em baixo da frase, utilize o caomndo text-decoration:underline
+
+ex014 <a href="../ex014estilosinternos/anotações1">cssinterno</a>
+Para criar uma modificação geral do estilo html vá em cima do título e crie uma tag <style></style> dentro da tag style colque o que voce quer formatar e abre chaves{}. Por exemplo:
+<style>
+    h1{color:black}-irá mudar a cor da letra 
+</style>
+ou 
+<style>
+body{background-color:blue}    
+</style>
+
+ex015 <a href="../ex015 externos/anotações">cssexterno</a>
+Para criar uma pasta nova rapidademtne, crie um link com o nome da pasta que quer criar e segure ctrl e clique em cima por exemplo: <a href="teste01.html"></a>
+Para colocar o mesmo estilo de uma página para a outra rapidamente e facilmente utilize o comando no lugar do style: link:css que vai gerar: <link rel="stylesheet" href="style.css">
+Dentro do href=" " Você pode criar um nome que quiser, mas tente colocar um nome de fácil acesso(nunca se esqueça do .css no final) após ter criado, vá na segunda pasta que quer colocar o mesmo estilo e coloque em cima do título: link:css, ou seja, <link rel="stylesheet" href="style.css"> e dentro do href coloque o nome que voce criou anteriormente
+Você pode adicionar mais de um link:css, cada uma com um nome diferente, para que assim voce consiga colocar essas estilos cada um em pastas específicas, basta colocar o nome que voce quer nos dois, tanto quando for criar, quanto na segunda pasta que for selencionar o link:css
+Você pode misturar os comandos caso queria, adicionando não só o link:css mas também adicionando um css externo com um style, ou até mesmo um inline adicionar um style dentro da própria tag
+
+Para começar a criar todos os estilos para o seu conteúdo, você precisa colocar o comando: <style></style> dentro de head.
+
+Para mudar a cor de fundo do seu site, você deve colocar dentro de <style> </style> o comando: background-color:cor
+
+Para mudar a cor da letra do seu conteúdo, você pode utilizar o comando dentro de style: color:cor;
+
+Lembrando que para defirnir a cor, você pode escrever o nome da cor, ou utilizar o comando hexadecimal,(10 números) do 1 ao 9, sendo o mínimo 0 e maximo 255, onde 255 é branco e 0 preto formato rgb.
+Ou você também pode por em forma em que além do 1 ao 9 vai do a até o f.
+
+Para criar uma cor ao seu site, com duas cores diferentes, você deve utilizar o comando:
+background-image:linear-gradient(direção:<!-- to top,bottom,left,right -->, cor, cor)
+
+Para definir a fonte da família, você deve usar o comando: font-family:""
+
+Para definir a altura da caixa de texto, você pode utilizar o comando: height;
+Para definir a largura da caixa de texto, você pode utilizar o comando:width;
+
+Para mover o texto de um lado para o outro, você deve uitlizar o comando:text-align, tendo muitas opções, que são:
+text-align:left;<!-- esquerda -->
+text-align:right<!-- direita -->
+text-align:justify<!-- Fica organizado -->
+
+Para engrossar a caixa de texto, você pode utilizar o comando: padding: px;
+
+Para separar uma caixa de texto da outra, você pode utilizar o comando: 
+maring: <!-- tendo várias opções -->
+margin: px; em px 
+margin:auto<!-- centraliza no meio da tela -->
+
+Para criar uma caixa de texto específica para textos, você deve utilizar o comando:
+<main></main>
+
+Para definir o tamanho da letra, você pode utilizar o comando:
+font-size:
+
+Para definir uma borda, você pode utilizar o comando: border:px solid cor
+
+Para definir o quão redondo as bordas da sua caixa de texto são, você pode utilizar o comando: border-radius:px;
+
+Para definir uma sombra para a sua caixa de texto, você pode utilizar o comando: box-shadow: direita,baixo, espalha(quanto menor menos espalha) cor
+
+Para definir uma sombra para o seu texto você pode utilizar o memso comando de cima trocando apeasn o box-shadow para text-shadow;
+
+Para fixar uma imagem na tela, você pode utilizar o comando: background-attachment:fixed;
+
+Para definir o espaço que tem n início do texto, você pode utilizar o comanod: text-indent: px;
+
+Para colocar uma fonte externa, você primeiramente deve criar uma regra:
+@import
+e depois colocar a font que você conseguiu no google fonts.
+@import url('')
+
+
+Para colocar uma frase em negrito ou tirar ele, você pode utilizar o comando:
+font-weight:lighter normal bold bolder ;
+
+para mudar o estilo de uma palavra, você pode colocar o seguinte comando: 
+font-style:'' sans-serif;
+Dica: Tente sempre colocar o sans-serif após todos os outros estilos, pois, ele é o único estilo que se encaixa em todos os navegadores.
+Para saber mais sobre a anatomia das fontes você pode ir acessando as anotações presentes no link a seguir:
+<a href="Exercícios2\ex003tipografia2\anotações\anotaçõesfontes.html"></a> Esse link, não irá levar você para um caminho específico, mas você pode ir seguindo ele para encontrar.
+Caso você queira acessar outras fontes além do google fonte, você pode acessar o link:
+<a href="https://www.dafont.com/pt/">dafont</a>
+Cuidado: nem todas as fontes personalizadas encontradas no dafont, terão todas as letras, ou seja, Pode acabar não tendo uma letra que você gostaria de usar, pode ser sinal de acentuação
+
+Para utilizar essas fontes personalizadas pelo dafont, você deve utilizar uma regra e essa regra é:
+@font-face{
+    font-family: ;
+    src:url();
+}
+<strong>Recomendado!!. Recomendo seguir o link para descobrir mais sobre essa regra. Recomendo!!
+    <a href="Exercícios2\ex003tipografia2\anotações\anotaçõespesoestilo3.html"></a>
+</strong>
+
+Para alterar o tamanho das letras de um parágrafo por exemplo, você pode utilizar o comando:
+font-size: 
+onde as medidas mais comuns são px e em 
+1em=16px 
+
+Porém também existe outras medidas, como o rem que também é bastante utilizado, e ele significa que ele é relativo ao tamanho do corpo, ou seja, é tipo a porcentagem.
+
+Também tem o vw(view width) que é variado com o tamanho da largura
+
+e taem o vh(view height) que é variado com o tamanho da altura.
+
+e por fim a % onde ele é calculado não pelo corpo mas sim pela página toda.
+
+<strong>Ao colocar as fontes, não coloque um espaço entre o número e a fonte específica, ou seja: 16 px(errado)
+      16px (certo) </strong>
+
+você pode conseguiir descobrir qual a fonte que um site está utilizando, que é uma extensão chamada fonts-ninja. Para mais informações sobre, você pode ir acompanhando o link:
+<a href="Exercícios2\ex003tipografia2\anotaçõescapturafontestodas\anotaçõescapturafonte.html"></a>
+Ou outras extensões: 
+<a href="Exercícios2\ex003tipografia2\anotaçõescapturafontestodas\myfonts.html"></a>
+<a href="Exercícios2\ex003tipografia2\anotaçõescapturafontestodas\whatfontis.html"></a>
+
+
+
+
+
+
+
+<strong>Começo do anotações 3</strong>
+
+
+Para colocar as letras um pouco maiores que antes, você pode utilizar o comando: 
+font-variant:small-caps.
+
+Para colocar todas as letras de uma determinada parte do texto, você pode envelopar essa parte com o seguinte comando:
+text-transofrm:uppercase
+funciona também com o texto todo.
+
+
+Para criar o efeito paralax, onde a imagem se "mexe" enquanto você movimenta a tela, você deve utilizar o comando 
+
+
+<img src="" alt=""><!-- para definir a imagem -->
+<strong>Recomendo que você colque a imagem dentro de uma div</strong>
+
+e aplicar o css para essa imagem com os comandos:
+background-attachment:fixed; onde ele irá fixar a tela de fundo, 
+
+background-size:cover; onde com esse comando, ele irá aumentar ou diminuir a imagem até que ela apareça totalmente, ou seja, caso a imagem for muito maior que a div, você utiliza esse comando para que ela fique a imagem toda aparecendo.
+
+background-position: left center; onde esse comando irá decidir em qual parte da imagem você irá colocar, ou seja, nesse caso, pegará a parte direta central a imagem.
+fim
+
+Para você por uma sombra para dentro, você pode utilizar o comando inset dentro do box-shadow, ou seja:
+box-shadow: inset 1px 1px 0px 1px black;
+
+
+Utilize o comando: margin:auto para centralizar uma caixa, porém só funciona horizontalmente-;
+
+para alinhar verticalmente, você não pode utilizar o margin:auto e sim o comando:
+positon:relative:<!-- pai -->
+position:absolute:<!-- filho -->
+
+onde ao adicionar o position:absolute você pode adicionar mais dois comandos:
+top:px, em
+left:px, em
+
+Onde por você colocar o absolute, ele irá se basear na tela da caixa,ou seja, ele começa no canto, e ao decidir o topo ou esquerda ele irá ir se movimentando.
+o relative, irá decidir onde ele fica se baseando na sua posição de origem.
+
+Caso queria colocar o conteúdo exatamente no meio, você pode adicionar o 50%, porém ele irá passar, já que ele irá colocar o topo esquerdo no meio, enquanto o resto irá passar disso, e para consertar isso você pode adiconar além desse comando o comando:
+transform:translate(px, px) onde os 
+valores positivos: primeiro mexe para a direita e segundo para baixo
+valores negativos: o primeiro mexe para a esquerda e o segundo para cima.
+e para centralizar você deve colocar -50%, -50%
+
+Utilize o comando dentro de style:
+background-image:url()
+Onde dentor dos parentes você coloca o caminho relativo da imagem ou o link da imagem do google, mas saiba que se caso a imagem do google seja deletado, a imagem do seu site também irá sumir.
+<strong>Cuidado com o tamanho do arquivo da imagem para que não fique muito pesado.</strong>
+
+Caso você queria modificar qualquer coisa do fundo, você pode se baseiar no comando: background-
+ou seja, background-size:muda o tamanho.
+
+Pode ser que algums imagens ficam se repetindo por causa que elas são pequenas demais, e para que elas não se repitam mais, você pode utilizar o comando:
+background-repeat:no-repeat;
+
+além do no-repeat também temos;
+background-repeat:repeat<!-- irá repetir(padrão) -->
+background-repeat:no-repeat; <!-- não irá repetir -->
+background-repeat:repeat-x<!-- irá repetir apenas na linha horizontal- -->
+background-repeat:repeat-y<!-- irá repetir apenas na linha vertical | -->
+
+
+Para definir a localização de uma imagem de fundo você pode utilizar o comando:
+background-position: center center;
+onde possúi todos os lados, ou seja:
+top right,left
+bottom right,left
+center center
+center,top,left,right,bottom
+
+Para fazer com que a imagem de fundo role junto com a tela, você pode utilizar o comando:
+background-attachment:fixed;
+
+background-attachment:scroll<!-- forma padrão -->
+
+Você pode combinar o background-size:cover com o background-attachment:fixed, que irá fazer com que a imagem ocupe totalmente a tela e role junto com o conteúdo.
+
+Uma shorthand que usa vários comandos de uma imagem de fundo é
+<!-- Color image position repeat size attachment -->
+Juntando tudo exatamente nessa ordem fica:
+background:color image position {size} repeat attachment;
+ou
+<!-- background:gray url('url do site') center center cover no-repeat fixed;-->
+
+o cover <!-- size  --> pode não funcionar, dentro da shorthand mesmo que seja um comando oficial, e para consertar isso, você pode apenas retirar ele da shorthand e colocar ele na linha de baixo.
+
+Para criar uma tabela, você precisa seguir uma hierarqueia, onde:
+table=tabela.
+table row=linha de tabela
+table head= cabeçalho
+caption=título principal
+th=título específico
+tablebody=corpo
+tfoot=rodapé
+table data=dados da tabela
+ou seja:
+<table>
+    <caption>título</caption>
+<thead>
+<tr>
+<th>cabeçalho</th>
+</tr>
+</thead>
+
+<tbody>
+    <tr>
+    <td>conteúdo</td>
+</tr>
+</tbody>
+
+<tfoot><td>rodapé</td></tfoot>
+</table>
+
+Dentro do td você pode modificar a altura e largura, ou seja:
+td{
+    width:200px;
+    height:200px;
+}
+Para colocar a borda que vai faltar, só colocar o comando:
+td{
+    border: 1px solid black
+}
+Para afastar a letra da borda, você pode utilizar o padding:
+td{
+    padding:10px;
+
+}
+Para colcoar cada conteúdo um colado no outro, você deve modificar sua borda com o comando:
+td{
+    border-collapse:collapse
+}
+Para modificar a cor de  uma linha toda você pode alterar direto o tr, ou seja:
+tr{
+    background-color:gray;
+}
+Para modficar apenas a coluna, você pode utilizar os escopes, onde eles servem para você avisar ao seu navegador se é uma linha ou uma coluna, muito utilizado em títulos, ou seja:
+<th scope="col"></th>
+<th scope="row"></th>
+
+Para você aumentar uma coluna ou linha, você pode colocar um span, ou seja:
+<th rowspan="2"></th>
+<td colspan="2"></td>
+
+Sabendo o que é o span e scope, é facil saber o que é scope group, pois, ele irá indicar que aquela linha ou coluna inteira é uma linha ou coluna, ou sej:
+<th scope="colgroup"></th>
+<th scope="rowgroup"></th>
+
+você pode centralizar o conteúdo com o comando:
+td{
+    text-aling:center;
+    text-align:justify;
+    text-align:right;
+    text-align:left;
+}
+td{
+    vertical-align: auto;/* em cima */
+    vertical-align: middle;/* no meio *//*padrão*/
+
+    vertical-align:bottom;/* em baixo */
+}
+<strong>Existe algumas outras posições, porém não foram ensinadas ainda.</strong>
+
+Você pode especificar um dado da sua tabela, para qual direção ele vai, tudo apenas utilizando
+o id ou class.
+
+Assim como já dito anteriormente, temos uma hierarquia para as tabelas, 
+caption tr th td, e além deles também temos o thead tbody e tfoot, onde eles servem apenas para facilitar a criação para tabelas, é indicado para tabelas muito grandes, pois caso for para uma tabela pequena não precisa fazer tanta coisa
+
+
+Para criar um efeito zebrado dentro da sua tabela o que pode facilitar na hora de leitura, você pode utilizar uma pseudoclass que é o :nth-child(n)
+ou seja, se for uma linha inteira, fica:
+tbody>tr:nth-child(2n){
+    background-color:black;
+}
+o "(2n)" indica que a cada duas linhas ele muda para a cor indicada, ou seja "black", entao fica:
+primeira linha:branco(cor padrão)
+segunda linha:preta(cor indicada)
+
+Caso você queria fazer com que a primeira linha seja preta, você pode colocar ao invés de 2n, o 2n-1
+
+Caso você queria que apenas as linhas impares sejam modificadas, só colocar
+tbody>tr:nth-child(odd)
+para pares:
+tbody>tr:nth-child(even)
+
+caso você queira fixar algum título, o que pode facilitar para tabelas com uma altura que seja superior á altura da tela, você tem que utilizar os comandos:
+table{
+    position:relative;
+}
+table>tr>th{
+    positon:sticky;<!-- grudar -->
+}
+isso irá fazer com que os títulos irão ficar na largura de origem mas irão ficar grudados no topo da tela ao você ir arrastando o site para baixo
+Mas esse topo pode ser customizado, basta apenas você modificar no próprio título, colocando:
+thead>tr>th{
+    positon:sticky;
+    top:0
+}
+mas ele irá colocar apenas as letras, e para que o fundo vá junto,você deve modificar a cor de fundo, também no próprio título.
+thead>tr>th{
+    positon:sticky;
+    top:-1<!-- irá grudar totalmente no topo da tela -->
+    background-color:cor de fundo
+}
+
+O título irá parar de grudar a partir do momento em que a tabela acabar.
+
+Para colocar um dado específico com o tamanho de dois dados, você pode utilizar o comando:
+<td colspan="2"></td>
+isso fará com que o dado fique com uma largura de duas colunas --
+
+Para modificar a sua altura, só colocar em rowspan=linha;
+<td rowspan="2"></td>
+
+Você pode moficar uma linha inteira, modificando apenas o tr, mas para modificar uma coluna isso não funciona.
+
+<strong>Para fazer com que a coluna inteira seja modificada, você não pode modificar nenhum dado daquela coluna, já que duas modificações vai indicar, erro.</strong>
+
+Para criar essa modifcação, você pode colocar o comando dentro da prórpia tabela, ou seja dentro de table:
+<colgroup>
+<col>
+</colgroup>
+
+colocando apenas uma coluna indica que vai modificar a primeira coluna da tabela.
+
+Caso você queria modificar a segunda coluna você deve colocar mais um <col>, ou seja:
+<colgroup>
+<col>
+<col>
+</colgroup>
+
+Para modificar a terceira, só colocar três col, para modificar as outras, só colocar mais.
+
+Para modificar apenas uma coluna, você pode utilizar o id, caso queira modifcar mais de uma com o mesmo estilo, utilize class.
+
+Caso você queria modifcar apenas a segunda coluna ou terceira... você pode colocar um Id e modificar apenas ela, ou seja:
+<colgroup>
+<col>
+<col>
+<col>
+<col id="Especial">
+</colgroup>
+
+Paramodificar várias colunas <strong>Seguidas</strong> de uma única vez, você pode utilizar o comando span="" ou seja:
+<colgroup>
+    <col>
+    <col>
+    <col>
+    <col id="Especial" span="2"><!--  irá modificar duas colunas, contando com ela -->
+    </colgroup>
